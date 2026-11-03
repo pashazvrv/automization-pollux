@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Разметчик v3</title>
+<style>
+:root{--bg:#f6f5f1;--card:#fff;--ink:#1d1d1b;--mut:#6d6c66;--line:#dcdad2;--warn:#b3261e;
+--tasks:#cfe3ff;--tc:#ffe3b8;--fc:#d4f0d0;--background:#eadcf5;--role:#ffd1dc;--data:#e0e0e0;--text:#d9ecec}
+@media(prefers-color-scheme:dark){:root{--bg:#1a1a18;--card:#242422;--ink:#ecebe6;--mut:#9a9890;--line:#3a3a36;--warn:#ff8a80;--tasks:#27476f;--tc:#6d4a1c;--fc:#2d5a2a;--background:#4a3566;--role:#6e2e40;--data:#444;--text:#2d5555}}
+*{box-sizing:border-box}body{margin:0;font:14px/1.45 system-ui,sans-serif;background:var(--bg);color:var(--ink);display:grid;grid-template-columns:190px minmax(0,1fr) 430px;height:100vh}
+#list{overflow:auto;border-right:1px solid var(--line);background:var(--card);font-size:12px}#list div{padding:4px 10px;cursor:pointer;border-bottom:1px solid var(--line)}
+#list .cur{background:var(--tasks)}#list .done{color:#2e7d32}#list .w{color:var(--warn)}
+#main{overflow:auto;padding:12px 18px}
+button,select,input,textarea{font:inherit;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:6px;padding:3px 8px}button{cursor:pointer}
+.bar{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-bottom:8px}.mut{color:var(--mut);font-size:12px}
+#text{white-space:pre-wrap;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px;font-size:15px;line-height:1.65;max-height:34vh;overflow:auto}
+mark{border-radius:3px;color:inherit}.m-tasks{background:var(--tasks)}.m-tc{background:var(--tc)}.m-fc{background:var(--fc)}.m-background{background:var(--background)}.m-role{background:var(--role)}.m-data{background:var(--data)}.m-text{background:var(--text)}
+.cat{margin:10px 0;border-left:6px solid var(--line);padding-left:10px}.cat h3{margin:0 0 4px;font-size:13px;display:flex;gap:8px;align-items:center}
+.c-tasks{border-color:var(--tasks)}.c-tc{border-color:var(--tc)}.c-fc{border-color:var(--fc)}.c-background{border-color:var(--background)}.c-role{border-color:var(--role)}.c-data{border-color:var(--data)}.c-text{border-color:var(--text)}
+.it{display:flex;gap:6px;align-items:flex-start;margin-bottom:4px;flex-wrap:wrap}.it textarea{flex:1;min-width:260px;resize:vertical;min-height:30px;overflow:hidden}
+.it .x{color:var(--warn);border:none;background:none;font-size:16px;padding:0 4px}
+.chip{border:1px solid var(--line);border-radius:12px;padding:0 8px;font-size:12px;cursor:pointer;user-select:none;background:var(--bg)}.chip.on{background:#3b82f6;color:#fff;border-color:#3b82f6}
+.warn{color:var(--warn);font-size:12px}.sub{width:100%;display:flex;gap:6px;align-items:center;font-size:12px;color:var(--mut)}.sub input{flex:1;font-family:monospace;font-size:12px}
+.nf{font-size:11px;color:var(--mut)}#err{position:fixed;left:210px;bottom:8px;background:#b3261e;color:#fff;padding:6px 10px;border-radius:6px;display:none;z-index:9}
+.sel{position:sticky;top:0;z-index:5;background:var(--bg);padding:4px 0}
+#jp{overflow:auto;border-left:1px solid var(--line);background:var(--card);padding:10px;display:flex;flex-direction:column;gap:6px}
+#json{width:100%;flex:1;min-height:300px;font:12px/1.4 ui-monospace,Consolas,monospace;white-space:pre;resize:none;tab-size:2}
+#json.bad{border-color:var(--warn);outline:1px solid var(--warn)}#extra{font:11px/1.35 ui-monospace,Consolas,monospace;white-space:pre-wrap;color:var(--mut);margin:0;max-height:20vh;overflow:auto}
+@media(max-width:1100px){body{grid-template-columns:1fr;height:auto}#list{max-height:140px}#jp{border-left:none}}
+</style></head><body>
+<div id="list"></div>
+<div id="main">
+ <div class="bar"><button id="prev">← j</button><button id="next">k →</button><button id="done" style="background:#2e7d32;color:#fff">Готово ✓ Ctrl+Enter</button><button id="nextundone">к неразмеченному</button><button id="save">Скачать JSON</button><label class="mut">загрузить: <input type="file" id="file" accept=".json" style="width:170px"></label><span id="stat" class="mut"></span></div>
+ <div id="head" class="mut"></div>
+ <div id="text"></div>
+ <div class="sel mut">Выдели фрагмент в тексте и нажми: <b>1</b> задача · <b>2</b> огр. задачи · <b>3</b> огр. формата · <b>4</b> фон · <b>5</b> роль · <b>6</b> данные · <b>7</b> текст-материал. Любую строку ниже можно править: это свободный текст, он не обязан совпадать с промптом.</div>
+ <div id="cats"></div>
+ <div class="bar" style="margin-top:12px"><label>Заметка: <input id="note" style="width:380px"></label><label><input type="checkbox" id="ind"> неделимый (разбор невозможен)</label></div>
+</div>
+<div id="jp"><div class="bar" style="margin:0"><b>JSON этого примера</b><span id="jst" class="mut"></span></div>
+ <div class="mut">Можно править прямо здесь: валидный JSON применяется сразу и обновляет карточки слева. Колонки и порядок как в вашем образце.</div>
+ <textarea id="json" spellcheck="false"></textarea>
+ <div class="mut">Дополнительно (задаётся кнопками «к: …» и типом проверки, в JSON выше не входит):</div><pre id="extra"></pre></div>
+<div id="err"></div>
+<script>
+window.onerror=(m,u,l)=>{const e=document.getElementById("err");e.style.display="block";e.textContent="Ошибка: "+m+" (стр. "+l+")"};
+const EMBED=null;
+const CATS=[{k:"tasks",l:"Задачи",key:"1"},{k:"tc",l:"Ограничения задачи",key:"2"},{k:"fc",l:"Ограничения формата (проверяются программой)",key:"3"},{k:"background",l:"Фон",key:"4"},{k:"role",l:"Роль",key:"5"},{k:"data",l:"Данные (материал)",key:"6"},{k:"text",l:"Текст (материал)",key:"7"}];
+const CHK={markup:'{"type":"markup","value":"md"}',length:'{"type":"length","unit":"words","op":"<=","value":200}',structure:'{"type":"structure","element":"list","mode":"present","value":null}',language:'{"type":"language","value":"en"}',case:'{"type":"case","value":"lower"}',keywords:'{"type":"keywords","mode":"exclude","words":[""],"count":null}',startend:'{"type":"startend","where":"end","value":""}',value:'{"type":"value","range":[1,10]}',dedup:'{"type":"dedup"}'};
+const $=id=>document.getElementById(id);let D=[],cur=0;
+function norm(it){it.context=it.context||{};["role","data","text","background"].forEach(k=>it.context[k]=it.context[k]||[]);it.tasks=it.tasks||[];it.constraints=it.constraints||{};
+ it.constraints.format_constraints=it.constraints.format_constraints||[];it.constraints.task_constraints=it.constraints.task_constraints||[];
+ it.attach=it.attach||{};["format_constraints","task_constraints"].forEach(k=>{const a=it.attach[k]=it.attach[k]||[];while(a.length<it.constraints[k].length)a.push(it.tasks.length==1?[0]:[]);a.length=it.constraints[k].length});
+ const c=it.checks=it.checks||[];while(c.length<it.constraints.format_constraints.length)c.push(null);c.length=it.constraints.format_constraints.length;return it}
+function arr(it,k){return k=="tasks"?it.tasks:k=="tc"?it.constraints.task_constraints:k=="fc"?it.constraints.format_constraints:it.context[k]}
+function akey(k){return k=="tc"?"task_constraints":"format_constraints"}
+function addItem(it,k,t,at){const a=arr(it,k);a.push(t);
+ if(k=="tc"||k=="fc"){it.attach[akey(k)].push(at||(it.tasks.length==1?[0]:[]));if(k=="fc")it.checks.push(null)}return a.length-1}
+function delItem(it,k,i){arr(it,k).splice(i,1);
+ if(k=="tc"||k=="fc"){it.attach[akey(k)].splice(i,1);if(k=="fc")it.checks.splice(i,1)}
+ if(k=="tasks"){["task_constraints","format_constraints"].forEach(g=>it.attach[g]=it.attach[g].map(l=>l.filter(x=>x!=i&&x!=="*").map(x=>x>i?x-1:x).concat(l.includes("*")?["*"]:[])))}}
+function view(it){return {tasks:it.tasks,context:{role:it.context.role,data:it.context.data,text:it.context.text,background:it.context.background},constraints:{format_constraints:it.constraints.format_constraints,task_constraints:it.constraints.task_constraints}}}
+let jsonSrc=false;
+function syncJson(){if(!D.length)return;const it=D[cur];if(!jsonSrc||document.activeElement!==$("json")){$("json").value=JSON.stringify(view(it),null,2);$("json").classList.remove("bad");$("jst").textContent="✓"}
+ $("extra").textContent=JSON.stringify({attach:it.attach,checks:it.checks.map(c=>c&&c.__err?"?":c)},null,1)}
+$("json").addEventListener("input",()=>{try{const o=JSON.parse($("json").value);if(!Array.isArray(o.tasks)||typeof o.context!=="object"||typeof o.constraints!=="object")throw new Error("нужны ключи tasks, context, constraints");
+ const it=D[cur],rows=a=>(Array.isArray(a)?a:[]).map(String);
+ it.tasks=rows(o.tasks);const c=o.context||{};["role","data","text","background"].forEach(k=>it.context[k]=rows(c[k]));
+ const q=o.constraints||{};it.constraints.format_constraints=rows(q.format_constraints);it.constraints.task_constraints=rows(q.task_constraints);norm(it);
+ $("json").classList.remove("bad");$("jst").textContent="✓ применено";jsonSrc=true;save();render();jsonSrc=false;$("extra").textContent=JSON.stringify({attach:it.attach,checks:it.checks.map(c=>c&&c.__err?"?":c)},null,1)}
+ catch(e){$("json").classList.add("bad");$("jst").textContent="✗ "+e.message.slice(0,60)}});
+function save(){try{localStorage.setItem("annv3b",JSON.stringify({D,cur}))}catch(e){}}
+function load(){try{const s=JSON.parse(localStorage.getItem("annv3b")||"null");if(s&&s.D&&s.D.length){D=s.D;cur=s.cur||0}}catch(e){}}
+function warns(it){const w=[];if(!it.tasks.length&&!it.indivisible)w.push("нет задач (добавь, в т.ч. неявную, или отметь «неделимый»)");
+ it.tasks.forEach((t,i)=>{if(!t.trim())w.push("пустая задача "+(i+1))});
+ [["tc","task_constraints"],["fc","format_constraints"]].forEach(([k,g])=>arr(it,k).forEach((t,i)=>{const a=it.attach[g][i]||[];if(!t.trim())w.push("пустое ограничение");else if(!a.length)w.push("нет привязки: «"+t.slice(0,25)+"»");else a.forEach(x=>{if(x!=="*"&&x>=it.tasks.length)w.push("привязка к несуществующей задаче")})}));
+ it.constraints.format_constraints.forEach((t,i)=>{const c=it.checks[i];if(!c)w.push("формат без проверки: «"+t.slice(0,25)+"» (задай тип или перенеси в огр. задачи)");else if(c.__err)w.push("проверка не JSON: «"+t.slice(0,20)+"»")});return w}
+function highlight(it){const segs=[],used=[];CATS.forEach(c=>arr(it,c.k).forEach(s=>{s=s.trim();if(s.length<2)return;let st=0,f=-1;while(true){const i=it.text.indexOf(s,st);if(i<0)break;if(!used.some(p=>i<p[1]&&i+s.length>p[0])){f=i;break}st=i+1}if(f>=0){used.push([f,f+s.length]);segs.push({a:f,b:f+s.length,k:c.k})}}));
+ segs.sort((x,y)=>x.a-y.a);const esc=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;");let h="",p=0;segs.forEach(s=>{h+=esc(it.text.slice(p,s.a))+`<mark class="m-${s.k}">`+esc(it.text.slice(s.a,s.b))+"</mark>";p=s.b});return h+esc(it.text.slice(p))}
+function render(keepFocus){
+ if(!D.length){$("text").textContent="Данных нет: загрузи JSON (кнопка «загрузить»).";$("list").innerHTML="";$("cats").innerHTML="";return}
+ const it=D[cur];norm(it);
+ $("list").innerHTML=D.map((x,i)=>`<div class="${i==cur?"cur":""} ${x.done?"done":""}" data-i="${i}">${x.done?"✓ ":""}${x.id} <span class="mut">${x.split||""}</span></div>`).join("");
+ document.querySelectorAll("#list div").forEach(d=>d.onclick=()=>go(+d.dataset.i));
+ const cl=document.querySelector("#list .cur");cl&&cl.scrollIntoView({block:"nearest"});
+ $("stat").textContent=D.filter(x=>x.done).length+" / "+D.length+" готово";
+ $("head").textContent=it.id+" · "+(it.split||"")+(it.source?" · черновик: "+it.source:"");
+ $("text").innerHTML=highlight(it);$("note").value=it.note||"";$("ind").checked=!!it.indivisible;
+ const W=warns(it);let h=W.length?`<div class="warn">⚠ ${W.join("<br>⚠ ")}</div>`:`<div class="mut">предупреждений нет</div>`;
+ CATS.forEach(c=>{const a=arr(it,c.k),g=c.k=="tc"?"task_constraints":"format_constraints";
+  h+=`<div class="cat c-${c.k}"><h3>${c.l} <span class="mut">${a.length}</span><button data-add="${c.k}">+ добавить</button></h3>`;
+  a.forEach((t,i)=>{h+=`<div class="it" data-k="${c.k}" data-i="${i}"><textarea rows="1" data-t="1">${t.replace(/&/g,"&amp;").replace(/</g,"&lt;")}</textarea>`;
+   if(c.k=="tc"||c.k=="fc"){const at=it.attach[g][i]||[];h+=`<span class="mut">к:</span><span class="chip ${at.includes("*")?"on":""}" data-at="*">все</span>`+it.tasks.map((_,j)=>`<span class="chip ${at.includes(j)?"on":""}" data-at="${j}" title="${(it.tasks[j]||"").replace(/"/g,"'")}">задача ${j+1}</span>`).join("")}
+   h+=`<select data-mv title="перенести в другой раздел"><option value="">→</option>${CATS.filter(x=>x.k!=c.k).map(x=>`<option value="${x.k}">${x.l.split(" (")[0]}</option>`).join("")}</select><button class="x" data-del title="удалить">×</button>`;
+   if(c.k=="fc"){const ch=it.checks[i],ty=ch&&ch.type||"";h+=`<div class="sub"><select data-ctype><option value="">тип проверки…</option>${Object.keys(CHK).map(k=>`<option ${k==ty?"selected":""}>${k}</option>`).join("")}</select><input data-cjson value='${ch?(ch.__err?ch.__raw:JSON.stringify(ch)).replace(/'/g,"&#39;"):""}' placeholder="параметры JSON"></div>`}
+   h+=`</div>`});h+=`</div>`});
+ $("cats").innerHTML=h;wire();syncJson();
+ if(keepFocus){const e=document.querySelector(`.it[data-k="${keepFocus.k}"][data-i="${keepFocus.i}"] textarea`);e&&e.focus()}
+ const li=document.querySelectorAll("#list div")[cur];if(li)li.classList.toggle("w",W.length>0)}
+function grow(t){t.style.height="auto";t.style.height=Math.max(30,t.scrollHeight+2)+"px"}
+function wire(){const it=D[cur];
+ document.querySelectorAll("#cats textarea").forEach(t=>{grow(t);const row=t.closest(".it"),k=row.dataset.k,i=+row.dataset.i;
+  t.oninput=()=>{arr(it,k)[i]=t.value;grow(t);save();syncJson()};t.onchange=()=>{$('text').innerHTML=highlight(it)};
+  t.onkeydown=e=>{if(e.key=="Enter"&&!e.shiftKey){e.preventDefault();const n=addItem(it,k,"");save();render({k,i:n})}
+   else if(e.key=="Backspace"&&!t.value){e.preventDefault();delItem(it,k,i);save();render(i>0?{k,i:i-1}:null)}}});
+ document.querySelectorAll("#cats .it").forEach(row=>{const k=row.dataset.k,i=+row.dataset.i,g=k=="tc"?"task_constraints":"format_constraints";
+  row.querySelectorAll("[data-at]").forEach(c=>c.onclick=()=>{let a=it.attach[g][i]||[];const v=c.dataset.at=="*"?"*":+c.dataset.at;
+   if(v=="*")a=a.includes("*")?[]:["*"];else{a=a.filter(x=>x!="*");a=a.includes(v)?a.filter(x=>x!=v):[...a,v].sort()}it.attach[g][i]=a;save();render()});
+  const mv=row.querySelector("[data-mv]");mv.onchange=()=>{if(!mv.value)return;const t=arr(it,k)[i];delItem(it,k,i);addItem(it,mv.value,t);save();render()};
+  row.querySelector("[data-del]").onclick=()=>{delItem(it,k,i);save();render()};
+  const ct=row.querySelector("[data-ctype]");if(ct)ct.onchange=()=>{it.checks[i]=ct.value?JSON.parse(CHK[ct.value]):null;save();render()};
+  const cj=row.querySelector("[data-cjson]");if(cj)cj.onchange=()=>{if(!cj.value.trim()){it.checks[i]=null}else{try{it.checks[i]=JSON.parse(cj.value)}catch(e){it.checks[i]={__err:1,__raw:cj.value}}}save();render()}});
+ document.querySelectorAll("[data-add]").forEach(b=>b.onclick=()=>{const k=b.dataset.add,n=addItem(it,k,"");save();render({k,i:n})});
+ $("note").onchange=()=>{it.note=$("note").value;save()};$("ind").onchange=()=>{it.indivisible=$("ind").checked;save();render()}}
+function selText(){const s=getSelection();if(!s||s.isCollapsed)return null;const r=s.getRangeAt(0);if(!$("text").contains(r.commonAncestorContainer))return null;const t=s.toString().replace(/^\s+|\s+$/g,"");return t||null}
+function addSel(k){const t=selText();if(!t)return false;const it=D[cur],n=addItem(it,k,t);getSelection().removeAllRanges();save();render();return true}
+function go(i){if(i<0||i>=D.length)return;cur=i;save();render();window.scrollTo(0,0);$("main").scrollTop=0}
+$("prev").onclick=()=>go(cur-1);$("next").onclick=()=>go(cur+1);
+$("nextundone").onclick=()=>{const i=D.findIndex((x,j)=>j>cur&&!x.done);go(i>=0?i:Math.max(0,D.findIndex(x=>!x.done)))};
+$("done").onclick=()=>{const it=D[cur],w=warns(it);if(w.length&&!confirm("Есть предупреждения:\n- "+w.join("\n- ")+"\nВсё равно отметить готовым?"))return;it.done=true;save();if(cur<D.length-1)go(cur+1);else render()};
+function clean(it){const o={id:it.id,split:it.split,text:it.text,tasks:it.tasks.map(s=>s.trim()),context:{role:it.context.role,data:it.context.data,text:it.context.text,background:it.context.background},
+ constraints:{format_constraints:it.constraints.format_constraints,task_constraints:it.constraints.task_constraints},
+ attach:it.attach,checks:it.checks.map(c=>c&&c.__err?null:c),indivisible:!!it.indivisible,note:it.note||"",done:!!it.done};return o}
+$("save").onclick=()=>{const b=new Blob([JSON.stringify(D.map(clean),null,1)],{type:"application/json"});const a=document.createElement("a");a.href=URL.createObjectURL(b);a.download="gold_v3_"+new Date().toISOString().slice(0,10)+".json";a.click()};
+$("file").onchange=e=>{const f=e.target.files[0];if(!f)return;f.text().then(t=>{const a=JSON.parse(t);if(D.length&&!confirm("Заменить текущую разметку ("+D.filter(x=>x.done).length+" готово) загруженным файлом?"))return;D=a.map(norm);cur=Math.max(0,D.findIndex(x=>!x.done));save();render()})};
+document.addEventListener("keydown",e=>{
+ if(e.ctrlKey&&e.key=="Enter"){e.preventDefault();$("done").click();return}
+ if(e.target.closest("input,textarea,select"))return;
+ const c=CATS.find(c=>c.key==e.key);if(c&&selText()){e.preventDefault();addSel(c.k);return}
+ if(e.key=="j")$("prev").click();if(e.key=="k")$("next").click()});
+document.addEventListener("mouseup",()=>{});
+load();if(!D.length&&EMBED){D=EMBED.map(norm);cur=0}
+// кнопки добавления выделения: панель из CATS в шапке выделения
+const sel=document.querySelector(".sel");CATS.forEach(c=>{const b=document.createElement("button");b.textContent=c.key+" "+c.l.split(" (")[0];b.className="m-"+c.k;b.onmousedown=e=>e.preventDefault();b.onclick=()=>{if(!addSel(c.k))alert("Сначала выдели фрагмент в тексте")};sel.appendChild(b)});
+render();
+</script></body></html>

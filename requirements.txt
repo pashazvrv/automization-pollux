@@ -1,0 +1,7 @@
+requests
+python-dotenv
+pandas
+openpyxl
+ijson
+scikit-learn
+tqdm
