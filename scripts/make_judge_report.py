@@ -15,7 +15,7 @@ for l in open(a.judge, encoding="utf-8"):
 M = {}
 if os.path.exists(a.model):
     for l in open(a.model, encoding="utf-8"):
-        r = json.loads(l); M[r["id"]] = (r.get("stages") or {}).get("s4")
+        r = json.loads(l); M[r["id"]] = (r.get("stages") or {}).get("s5")
 TYPES = ["missing_task","extra_task","missing_constraint","extra_constraint","wrong_class","role","background","material","span"]
 RU = {"missing_task":"пропущена задача","extra_task":"лишняя задача","missing_constraint":"пропущено ограничение",
       "extra_constraint":"выдумано ограничение","wrong_class":"неверный класс","role":"роль","background":"фон","material":"материал","span":"границы спана"}
@@ -33,9 +33,9 @@ def stats(src, ids):
 B0 = {}
 if a.base and os.path.exists(a.base):
     for l in open(a.base, encoding="utf-8"):
-        r = json.loads(l); B0[r["id"]] = r.get("s4")
+        r = json.loads(l); B0[r["id"]] = r.get("s5") or r.get("s4")
 ids = [i for i in J if i in G]
-Jg = {i: J[i].get("s4") for i in ids}
+Jg = {i: J[i].get("s5") or J[i].get("s4") for i in ids}
 parts = {"all": ids, "A": [i for i in ids if G[i]["part"] == "A"], "B": [i for i in ids if G[i]["part"] == "B"]}
 SG = {k: stats(Jg, v) for k, v in parts.items()}
 common = [i for i in ids if i in M]

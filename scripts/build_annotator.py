@@ -13,7 +13,7 @@ def convert(it):
            "attach": {"format_constraints": [], "task_constraints": []}, "checks": [],
            "indivisible": it.get("indivisible", False), "note": it.get("note", ""), "done": False}
     for u in U:
-        c = u["cls"]; t = " ".join(u["frags"]).strip()
+        c = u["cls"]; t = (u.get("norm") if c in ("tc", "fc") else None) or " ".join(u["frags"]).strip()
         if c in ("tc", "fc"):
             g = "task_constraints" if c == "tc" else "format_constraints"
             at = [uid2i[a] if a in uid2i else a for a in (u.get("attach") or [])]

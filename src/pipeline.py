@@ -1,4 +1,8 @@
-"""Многостадийная атомизация. S1 материал -> S2 разбор -> S3 классификация -> (S4 судья) -> (S5 неделимые)."""
+"""Многостадийная атомизация (v4).
+S1 материал -> S2 задачи/роль/фон/кандидаты -> S3 атомизация кандидатов -> S4 классификация атомов
+-> (S5 судья) -> (S6 фиксер + неделимость).
+Задачи и ограничения хранятся в согласованной форме (norm); дословные frags/src — внутренняя ссылка
+для проверки (нет выдумок, ничего не потеряно). Контекст (data, background, role) — дословно."""
 import json, re, os, time, sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from llm import glm, gpt, gpt2
@@ -80,13 +84,13 @@ def short(t, limit=200):
     return t if len(t) <= limit or len(w) <= 12 else " ".join(w[:5]) + ANCHOR + " ".join(w[-5:])
 
 def judge_view(parsed):
-    """Разбор в схеме v3 для судьи: задачи с frags, ограничения с attach и check."""
-    U = parsed["units"]; c = parsed["context"]
-    v = {"tasks": [{"id": u["uid"], "frags": [short(x) for x in u["frags"]], "norm": u.get("norm", "")} for u in U if u["cls"] == "task"],
-         "task_constraints": [{"span": u["frags"][0], "attach": u.get("attach")} for u in U if u["cls"] == "tc"],
-         "format_constraints": [{"span": u["frags"][0], "attach": u.get("attach"), "check": u.get("check")} for u in U if u["cls"] == "fc"],
-         "context": {"data": [short(x) for x in c["data"]], "text": [short(x) for x in c["text"]],
-                     "background": c["background"], "role": c["role"]}}
+    """Разбор в схеме v4 для судьи и фиксера: задачи (frags, norm), атомы (norm, src, attach, check), контекст."""
+    c = parsed["context"]
+    v = {"tasks": [{"id": t["id"], "frags": [short(x) for x in t["frags"]], "norm": t.get("norm", "")} for t in parsed["tasks"]],
+         "task_constraints": [{"norm": a["norm"], "src": a["src"], "attach": a["attach"]} for a in parsed["task_constraints"]],
+         "format_constraints": [{"norm": a["norm"], "src": a["src"], "attach": a["attach"], "check": a.get("check")}
+                                for a in parsed["format_constraints"]],
+         "context": {"data": [short(x) for x in c["data"]], "background": c["background"], "role": c["role"]}}
     return json.dumps(v, ensure_ascii=False)
 
 def as_text(x):
@@ -115,77 +119,156 @@ def clean_list(prompt, items):
         (ok if e else bad).append(e or t)
     return ok, bad
 
+def make_units(parsed):
+    """Плоский список юнитов (совместимость со скриптами отчётов и разметчика)."""
+    U = [{"cls": "task", "uid": t["id"], "order": i + 1, "frags": t["frags"], "norm": t["norm"]} for i, t in enumerate(parsed["tasks"])]
+    U += [{"cls": "tc", "frags": a["src"], "norm": a["norm"], "attach": a["attach"]} for a in parsed["task_constraints"]]
+    U += [{"cls": "fc", "frags": a["src"], "norm": a["norm"], "attach": a["attach"], "check": a.get("check")} for a in parsed["format_constraints"]]
+    c = parsed["context"]
+    U += [{"cls": "role", "frags": [x]} for x in c["role"]] + [{"cls": "bg", "frags": [x]} for x in c["background"]]
+    U += [{"cls": "mat", "frags": [x]} for x in c["data"]]
+    return U
+
+def _src(prompt, xs):
+    return [expand(prompt, x) or x for x in (xs if isinstance(xs, list) else [xs]) if isinstance(x, str) and x.strip()]
+
+def _attach(at):
+    return at if isinstance(at, list) and at else ["*"]
+
+def from_model_parse(prompt, P, old=None):
+    """Нормализует разбор, который вернул фиксер (S6): спаны -> точные подстроки, якоря материала раскрываются."""
+    c = P.get("context") or {}
+    tasks = []
+    for i, t in enumerate(P.get("tasks") or [], 1):
+        if isinstance(t, dict):
+            tasks.append({"id": t.get("id") or f"t{i}", "frags": _src(prompt, t.get("frags") or []), "norm": (t.get("norm") or "").strip()})
+    def atoms(k, fmt):
+        out = []
+        for a in P.get(k) or []:
+            if isinstance(a, dict) and (a.get("norm") or "").strip():
+                x = {"norm": a["norm"].strip(), "src": _src(prompt, a.get("src") or []), "attach": _attach(a.get("attach"))}
+                if fmt: x["check"] = a.get("check")
+                out.append(x)
+        return out
+    data = [expand(prompt, as_text(x)) or as_text(x) for x in c.get("data") or [] if as_text(x).strip()]
+    return {"tasks": tasks, "task_constraints": atoms("task_constraints", False), "format_constraints": atoms("format_constraints", True),
+            "context": {"data": data or (old or {}).get("context", {}).get("data", []),
+                        "background": _src(prompt, [as_text(x) for x in c.get("background") or []]),
+                        "role": _src(prompt, [as_text(x) for x in c.get("role") or []])},
+            "indivisible": None}
+
+def export_record(rec_id, prompt, parsed):
+    """Запись в формате разметчика: задачи и ограничения — только norm, привязка — индексы задач."""
+    ids = {t["id"]: i for i, t in enumerate(parsed["tasks"])}
+    att = lambda a: [x if x == "*" else ids.get(x, "*") for x in a]
+    ind = parsed.get("indivisible") or {}
+    return {"id": rec_id, "text": prompt, "source": "пайплайн v4",
+            "tasks": [t["norm"] for t in parsed["tasks"]] if not ind else [],
+            "context": {"role": parsed["context"]["role"], "data": parsed["context"]["data"], "text": [],
+                        "background": parsed["context"]["background"]},
+            "constraints": {"format_constraints": [a["norm"] for a in parsed["format_constraints"]],
+                            "task_constraints": [a["norm"] for a in parsed["task_constraints"]]},
+            "attach": {"format_constraints": [att(a["attach"]) for a in parsed["format_constraints"]],
+                       "task_constraints": [att(a["attach"]) for a in parsed["task_constraints"]]},
+            "checks": [a.get("check") for a in parsed["format_constraints"]],
+            "indivisible": bool(ind), "note": ((ind.get("reason") or "") + ": " + (ind.get("note") or "")) if ind else "", "done": False}
+
 def atomize(rec, model, judge_model=None):
     p = rec["instruction"]; out = {"id": rec["id"], "model": model, "stages": {}, "errors": []}
-    # S1
+    # S1 — материал (весь в data; старое поле text тоже принимаем)
     r1, raw1, e1 = ask(model, "s1_material.txt", p)
     if r1 is None:
         out["errors"].append(f"s1: {e1}"); return out
-    data, bad_d = clean_list(p, r1.get("data")); text, bad_t = clean_list(p, r1.get("text"))
+    data, bad_d = clean_list(p, (r1.get("data") or []) + (r1.get("text") or []))
     out["stages"]["s1"] = r1
-    if bad_d or bad_t: out["errors"].append(f"s1 неточные спаны: {bad_d + bad_t}")
-    masked = mask(p, data + text)
-    # S2
+    if bad_d: out["errors"].append(f"s1 неточные спаны: {bad_d}")
+    masked = mask(p, data)
+    # S2 — задачи (frags + norm), роль, фон, кандидаты с привязкой
     r2, raw2, e2 = ask(model, "s2_extract.txt", masked)
     if r2 is None:
         out["errors"].append(f"s2: {e2}"); return out
     out["stages"]["s2"] = r2
-    # S2 v3: задачи с frags, кандидаты с attach
-    cand_objs = []
+    cands = []
     for c in r2.get("candidates") or []:
         sp = as_text(c); at = c.get("attach") if isinstance(c, dict) else None
-        e = expand(p, sp) if sp.strip() else None
-        if sp.strip(): cand_objs.append({"span": e or sp, "attach": at if isinstance(at, list) and at else ["*"]})
-    cands = [c["span"] for c in cand_objs]
+        if sp.strip(): cands.append({"span": expand(p, sp) or sp, "attach": _attach(at)})
     role, bad_r = clean_list(p, r2.get("role")); bg, bad_b = clean_list(p, r2.get("background"))
+    role += bad_r; bg += bad_b
     tasks = []
     for i, t in enumerate(r2.get("tasks", []), 1):
         if not isinstance(t, dict): continue
         fr = t.get("frags") if isinstance(t.get("frags"), list) else ([t["span"]] if t.get("span") else [])
-        fr = [expand(p, f) or f for f in fr if isinstance(f, str) and f.strip()]
-        tasks.append({"id": t.get("id") or f"t{i}", "frags": fr, "span": fr[0] if fr else "", "norm": t.get("norm", "")})
-    # S3
-    fmt, tsk, drop, units_c = [], [], [], []
+        tasks.append({"id": t.get("id") or f"t{i}", "frags": _src(p, fr), "norm": (t.get("norm") or "").strip()})
+    # S3 — атомизация кандидатов: атомарные условия в согласованной форме со ссылкой на src
+    atoms, seen = [], set()
     if cands:
-        lst = "\n".join(f"{i + 1}. {c}" for i, c in enumerate(cands))
-        r3, raw3, e3 = ask(model, "s3_classify.txt", f"Промпт:\n{masked}\n\nКандидаты:\n{lst}")
+        tl = "\n".join(f"{t['id']} {t['norm']}" for t in tasks) or "(задач нет)"
+        lst = "\n".join(f"{i + 1}. [{', '.join(c['attach'])}] {c['span']}" for i, c in enumerate(cands))
+        r3, raw3, e3 = ask(model, "s3_atomize.txt", f"Промпт:\n{masked}\n\nЗадачи:\n{tl}\n\nКандидаты:\n{lst}")
         if r3 is None:
             out["errors"].append(f"s3: {e3}")
         else:
             out["stages"]["s3"] = r3
             for it in r3.get("items", []):
-                c = it.get("class")
-                try: k = int(it.get("id")) - 1; sp = cands[k]
-                except Exception: k = None; sp = expand(p, as_text(it.get("span"))) or as_text(it.get("span"))
-                at = cand_objs[k]["attach"] if k is not None else ["*"]
-                if c == "format":
-                    fmt.append(sp); units_c.append({"cls": "fc", "frags": [sp], "attach": at, "check": it.get("check")})
-                elif c == "task":
-                    tsk.append(sp); units_c.append({"cls": "tc", "frags": [sp], "attach": at})
-                else: drop.append(sp)
-    units = [{"cls": "task", "uid": t["id"], "order": i + 1, "frags": t["frags"], "norm": t["norm"]} for i, t in enumerate(tasks)]
-    units += units_c
-    units += [{"cls": "role", "frags": [x]} for x in role + bad_r] + [{"cls": "bg", "frags": [x]} for x in bg + bad_b]
-    units += [{"cls": "mat", "frags": [x]} for x in data + text]
-    parsed = {"tasks": tasks,
-              "task_constraints": tsk, "format_constraints": fmt,
-              "context": {"data": data, "text": text,
-                          "background": bg + bad_b, "role": role + bad_r},
-              "units": units, "indivisible": None}
-    parsed["_entangled_hints"] = r2.get("entangled", [])
-    parsed["_dropped"] = drop  # кандидаты, которые S3 счёл не ограничениями
+                try: k = int(it.get("id")) - 1; c = cands[k]
+                except Exception: continue
+                seen.add(k); mv = it.get("move_to")
+                if mv == "background": bg.append(c["span"]); continue
+                if mv == "role": role.append(c["span"]); continue
+                if mv == "task":
+                    tasks.append({"id": f"t{len(tasks) + 1}", "frags": [c["span"]], "norm": c["span"]}); continue
+                for a in it.get("atoms") or []:
+                    if isinstance(a, dict) and (a.get("norm") or "").strip():
+                        atoms.append({"norm": a["norm"].strip(), "src": _src(p, a.get("src") or []), "attach": c["attach"], "cand": k})
+        for k, c in enumerate(cands):   # кандидат, который S3 пропустил, идёт дальше как один атом
+            if k not in seen:
+                atoms.append({"norm": c["span"], "src": [c["span"]], "attach": c["attach"], "cand": k})
+                out["errors"].append(f"s3 пропустил кандидата {k + 1}")
+    # S4 — классификация атомов: format (с check) / task / not_constraint
+    tcs, fcs, drop = [], [], []
+    if atoms:
+        lst = "\n".join(f"{i + 1}. {a['norm']}  (из: «{' / '.join(a['src'])}»)" for i, a in enumerate(atoms))
+        r4, raw4, e4 = ask(model, "s4_classify.txt", f"Промпт:\n{masked}\n\nУсловия:\n{lst}")
+        cls = {}
+        if r4 is None:
+            out["errors"].append(f"s4: {e4}")
+        else:
+            out["stages"]["s4"] = r4
+            for it in r4.get("items", []):
+                try: cls[int(it.get("id")) - 1] = it
+                except Exception: pass
+        for i, a in enumerate(atoms):
+            it = cls.get(i, {"class": "task"}); a2 = {k: a[k] for k in ("norm", "src", "attach")}
+            if it.get("class") == "format": a2["check"] = it.get("check"); fcs.append(a2)
+            elif it.get("class") == "not_constraint": drop.append(a2)
+            else: tcs.append(a2)
+    parsed = {"tasks": tasks, "task_constraints": tcs, "format_constraints": fcs,
+              "context": {"data": data, "background": bg, "role": role}, "indivisible": None,
+              "_candidates": cands, "_atoms_by_cand": {}, "_entangled_hints": r2.get("entangled", []), "_dropped": drop}
+    for a in atoms: parsed["_atoms_by_cand"].setdefault(a["cand"], []).append(a["norm"])
+    parsed["units"] = make_units(parsed)
     out["parsed"] = parsed; out["validation"] = validate(p, parsed)
-    # S4 / S5
+    # S5 судья / S6 фиксер + неделимость
     if judge_model:
         view = judge_view(parsed)
-        r4, _, e4 = ask(judge_model, "s4_judge.txt", f"Промпт:\n{p}\n\nРазбор:\n{view}")
-        out["stages"]["s4"] = r4 if r4 else {"error": e4}
-        hints = json.dumps(parsed["_entangled_hints"], ensure_ascii=False)
-        r5, _, e5 = ask(judge_model, "s5_indivisible.txt",
-                        f"Промпт:\n{p}\n\nРазбор:\n{view}\n\nПодсказки разметчика о вплетённых требованиях:\n{hints}")
+        r5, _, e5 = ask(judge_model, "s5_judge.txt", f"Промпт:\n{p}\n\nРазбор:\n{view}")
         out["stages"]["s5"] = r5 if r5 else {"error": e5}
-        if r5 and r5.get("indivisible"):
-            parsed["indivisible"] = {"reason": r5.get("reason"), "evidence": r5.get("evidence"), "note": r5.get("note")}
+        errs = (r5 or {}).get("errors") or []
+        hints = json.dumps(parsed["_entangled_hints"], ensure_ascii=False)
+        r6, _, e6 = ask(judge_model, "s6_fix.txt",
+                        f"Промпт:\n{p}\n\nРазбор:\n{view}\n\nЗамечания судьи:\n{json.dumps(errs, ensure_ascii=False)}"
+                        f"\n\nПодсказки разметчика о вплетённых требованиях:\n{hints}")
+        out["stages"]["s6"] = r6 if r6 else {"error": e6}
+        if r6:
+            if r6.get("fixed") and isinstance(r6.get("parse"), dict):
+                before = {k: parsed[k] for k in ("tasks", "task_constraints", "format_constraints", "context")}
+                fixed = from_model_parse(p, r6["parse"], parsed)
+                for k in ("tasks", "task_constraints", "format_constraints", "context"): parsed[k] = fixed[k]
+                parsed["_before_fix"] = before; parsed["units"] = make_units(parsed)
+                out["validation"] = validate(p, parsed)
+            if r6.get("indivisible"):
+                parsed["indivisible"] = {"reason": r6.get("reason"), "evidence": r6.get("evidence"), "note": r6.get("note")}
+    out["export"] = export_record(rec["id"], p, parsed)
     return out
 
 def run(records, out_path, model, judge_model=None, workers=8):

@@ -36,7 +36,8 @@ def locate(p, s):
 def pred_spans(r, p):
     pa = r.get("parsed") or {}; c = pa.get("context") or {}
     src = {"task": [(t.get("span") if isinstance(t, dict) else t) for t in pa.get("tasks", [])],
-           "tc": pa.get("task_constraints", []), "fc": pa.get("format_constraints", []),
+           "tc": [" ".join(x.get("src") or []) if isinstance(x, dict) else x for x in pa.get("task_constraints", [])],
+           "fc": [" ".join(x.get("src") or []) if isinstance(x, dict) else x for x in pa.get("format_constraints", [])],
            "bg": c.get("background", []), "role": c.get("role", []), "mat": (c.get("data", []) or []) + (c.get("text", []) or [])}
     out = []; lost = 0
     for cl, lst in src.items():
