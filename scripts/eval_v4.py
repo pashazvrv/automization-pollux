@@ -9,11 +9,14 @@ R = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(R, "src"))
 from pipeline import ask
 
-RUN = os.path.join(R, "results", "v4_gpt_300.jsonl")
+TAG = os.environ.get("TAG", "v4b")          # v4a — без примеров из эталона, v4b — с few-shot
+RUN = os.path.join(R, "results", f"{TAG}_gpt_300.jsonl")
 GOLD = os.path.join(R, "claude_annot", "claude_300.json")
-MATCH = os.path.join(R, "results", "v4_eval_match.jsonl")
-JGOLD = os.path.join(R, "results", "v4_judge_gold.jsonl")
-OUT = os.path.join(R, "results", "v4_metrics.json")
+MATCH = os.path.join(R, "results", f"{TAG}_eval_match.jsonl")
+JGOLD = os.path.join(R, "results", f"{TAG}_judge_gold.jsonl")
+OUT = os.path.join(R, "results", f"{TAG}_metrics.json")
+FEW = os.path.join(R, "data", "gold_v3", "fewshot_v4.json")   # запросы из примеров промптов — в метрики не идут
+EXCL = set(json.load(open(FEW, encoding="utf-8"))) if os.path.exists(FEW) else set()
 MATCHER, JUDGE = "gpt2", "gpt2"
 
 def load_jsonl(p):
@@ -73,7 +76,10 @@ def gold_view(g):
 
 def cmd_judge_gold():
     gold = [g for g in json.load(open(GOLD, encoding="utf-8")) if not g["indivisible"]]
-    done = load_jsonl(JGOLD); todo = [g for g in gold if g["id"] not in done]
+    done = {k: v for k, v in load_jsonl(JGOLD).items() if "error" not in (v.get("s5") or {"error": 1})}
+    todo = [g for g in gold if g["id"] not in done]
+    if os.path.exists(JGOLD):   # убрать неудачные строки, их пересчитаем
+        open(JGOLD, "w", encoding="utf-8").writelines(json.dumps(v, ensure_ascii=False) + "\n" for v in done.values())
     note = "\n\n(Разбор — ручной эталон: ссылок src на куски запроса в нём нет, это не ошибка; frags задач пусты по той же причине.)"
     def job(g):
         r, _, e = ask(JUDGE, "s5_judge.txt", f"Промпт:\n{g['text']}\n\nРазбор:\n{gold_view(g)}{note}")
@@ -126,10 +132,12 @@ def prf(tp_m, m, tp_g, g):
     return {"P": P, "R": Rr, "F1": F}
 
 def cmd_report():
-    run = load_jsonl(RUN); gold = {g["id"]: g for g in json.load(open(GOLD, encoding="utf-8"))}
-    mt = load_jsonl(MATCH); jg = load_jsonl(JGOLD)
+    run = {k: v for k, v in load_jsonl(RUN).items() if k not in EXCL}
+    gold = {g["id"]: g for g in json.load(open(GOLD, encoding="utf-8")) if g["id"] not in EXCL}
+    mt = {k: v for k, v in load_jsonl(MATCH).items() if k not in EXCL}
+    jg = {k: v for k, v in load_jsonl(JGOLD).items() if k not in EXCL}
     items = {json.loads(l)["id"]: json.loads(l) for l in open(os.path.join(R, "data", "gold_v3", "items_300.jsonl"), encoding="utf-8")}
-    M = {"n": len(run)}
+    M = {"tag": TAG, "n": len(run), "excluded_fewshot": len(EXCL)}
     # --- здоровье пайплайна
     st = collections.Counter(); lint = collections.Counter(); moves = collections.Counter(); s4 = collections.Counter()
     natoms = []; per_task_type = collections.defaultdict(lambda: collections.Counter())

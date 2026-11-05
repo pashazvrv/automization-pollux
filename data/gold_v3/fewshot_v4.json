@@ -1,0 +1,98 @@
+{
+ "px1217": [
+  "prompts/s2_extract.txt"
+ ],
+ "px0169": [
+  "prompts/s2_extract.txt",
+  "prompts/s5_judge.txt"
+ ],
+ "px1800": [
+  "prompts/s2_extract.txt",
+  "prompts/s3_atomize.txt",
+  "prompts/s5_judge.txt"
+ ],
+ "px0124": [
+  "prompts/s5_judge.txt"
+ ],
+ "px1266": [
+  "prompts/s2_extract.txt"
+ ],
+ "px0281": [
+  "prompts/s2_extract.txt",
+  "prompts/s5_judge.txt",
+  "prompts/s6_fix.txt"
+ ],
+ "px0182": [
+  "prompts/s2_extract.txt"
+ ],
+ "px0565": [
+  "prompts/s2_extract.txt",
+  "prompts/s3_atomize.txt"
+ ],
+ "px0387": [
+  "prompts/s2_extract.txt",
+  "prompts/s6_fix.txt"
+ ],
+ "px1680": [
+  "prompts/s2_extract.txt"
+ ],
+ "px1231": [
+  "prompts/s2_extract.txt"
+ ],
+ "px1382": [
+  "prompts/s6_fix.txt"
+ ],
+ "px0111": [
+  "prompts/s2_extract.txt"
+ ],
+ "px0571": [
+  "prompts/s2_extract.txt"
+ ],
+ "px1052": [
+  "prompts/s5_judge.txt"
+ ],
+ "px0323": [
+  "prompts/s2_extract.txt"
+ ],
+ "px1201": [
+  "prompts/s2_extract.txt"
+ ],
+ "px1350": [
+  "prompts/s3_atomize.txt",
+  "prompts/s5_judge.txt"
+ ],
+ "px1624": [
+  "prompts/s2_extract.txt"
+ ],
+ "px1145": [
+  "prompts/s2_extract.txt",
+  "prompts/s3_atomize.txt",
+  "prompts/s5_judge.txt"
+ ],
+ "px0897": [
+  "prompts/s3_atomize.txt"
+ ],
+ "px0506": [
+  "prompts/s4_classify.txt"
+ ],
+ "px0616": [
+  "prompts/s5_judge.txt"
+ ],
+ "px0902": [
+  "prompts/s3_atomize.txt"
+ ],
+ "px1121": [
+  "prompts/s3_atomize.txt"
+ ],
+ "px1111": [
+  "prompts/s2_extract.txt",
+  "prompts/s3_atomize.txt",
+  "prompts/s5_judge.txt"
+ ],
+ "px1042": [
+  "prompts/s2_extract.txt"
+ ],
+ "px0679": [
+  "prompts/s3_atomize.txt"
+ ]
+}
