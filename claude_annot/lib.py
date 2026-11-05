@@ -2,10 +2,14 @@
 """Инструментарий разметки: DSL -> формат разметчика v3. Все спаны дословные (проверяется)."""
 import json, os, sys, unicodedata
 R = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SRC = os.path.join(R, "data", "gold_v3", "annot_start.json")
+SRC = os.path.join(R, "data", "gold_v3", "items_300.jsonl")
 OUTDIR = os.path.dirname(os.path.abspath(__file__))
 
-def items(): return json.load(open(SRC, encoding="utf-8"))
+def items():
+    out = []
+    for l in open(SRC, encoding="utf-8"):
+        d = json.loads(l); out.append({"id": d["id"], "text": d["instruction"], "split": d["split"]})
+    return out
 
 # ---- проверки формата (check) ----
 def L(unit, op, v): return {"type": "length", "unit": unit, "op": op, "value": v}
