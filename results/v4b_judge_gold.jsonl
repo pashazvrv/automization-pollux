@@ -1,0 +1,281 @@
+{"id": "px0933", "s5": {"verdict": "fix", "errors": [{"severity": "major", "rule": "форма записи", "type": "bad_norm", "target": "Перевести текст на русский", "note": "Язык перевода — ограничение, а не часть norm задачи. Норма задачи: «Перевести текст»."}, {"severity": "major", "rule": "п.6, п.8", "type": "missing_constraint", "target": "на русский", "note": "Не выделено требование к языку ответа. Добавить format_constraint «перевод на русском языке» с проверкой языка."}]}}
+{"id": "px1217", "s5": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0174", "s5": {"verdict": "ok", "errors": []}}
+{"id": "px0169", "s5": {"verdict": "ok", "errors": []}}
+{"id": "px0140", "s5": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1385", "s5": {"verdict": "ok", "errors": []}}
+{"id": "px0725", "s5": {"verdict": "fix", "errors": [{"severity": "major", "rule": "КОД: свойства результата; ни одно условие не потеряно", "type": "missing_constraint", "target": "\"3(ab)c\" → \"Неверный формат: число не может находиться перед группой\"", "note": "Пример задаёт поведение функции при числе перед группой: она должна возвращать сообщение об ошибке. Это условие не покрыто имеющимися атомами; добавить ограничение о возврате указанной строки для такого входа."}]}}
+{"id": "px1432", "s5": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1800", "s5": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0124", "s5": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0217", "s5": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1007", "s5": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0904", "s5": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0117", "s5": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1030", "s5": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0216", "s5": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0157", "s5": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1060", "s5": {"verdict": "ok", "errors": []}}
+{"id": "px1027", "s5": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1266", "s5": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0602", "s5": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0860", "s5": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0980", "s5": {"verdict": "ok", "errors": []}}
+{"id": "px0281", "s5": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0162", "s5": {"verdict": "ok", "errors": []}}
+{"id": "px0182", "s5": {"verdict": "ok", "errors": []}}
+{"id": "px0565", "s5": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0289", "s5": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1273", "s5": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0132", "s5": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1680", "s5": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1231", "s5": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0553", "s5": {"verdict": "ok", "errors": []}}
+{"id": "px0159", "s5": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0111", "s5": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1286", "s5": {"verdict": "ok", "errors": []}}
+{"id": "px1253", "s5": {"verdict": "fix", "errors": [{"severity": "major", "rule": "роль", "type": "role", "target": "Ты никогда не слышала о социальных сетях, не представляешь, как там можно зарабатывать, и вообще думаешь, что заработать можно, только работая руками на заводе. … ты внуков уже хочешь, но говорить со мной прямо на эту тему боишься, чтобы не обидеть.", "note": "Это описание назначенного персонажа — бабушки Нюши. Его нужно отнести к context.role, а не к background. Сведения о том, что пользователь работает в СММ и объясняет бабушке свою работу, могут остаться в background."}]}}
+{"id": "px0537", "s5": {"verdict": "fix", "errors": [{"severity": "major", "rule": "п.1(д)", "type": "span", "target": "Написать интервью со знаменитым тарологом", "note": "«Знаменитым» — качественный признак собеседника, а не часть задачи. Задача: «Написать интервью с тарологом»; признак нужно вынести в отдельное ограничение: «собеседник интервью — знаменитый таролог»."}]}}
+{"id": "px0740", "s5": {"verdict": "ok", "errors": []}}
+{"id": "px0978", "s5": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1573", "s5": {"verdict": "ok", "errors": []}}
+{"id": "px1601", "s5": {"verdict": "ok", "errors": []}}
+{"id": "px1545", "s5": {"verdict": "ok", "errors": []}}
+{"id": "px1104", "s5": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1549", "s5": {"verdict": "ok", "errors": []}}
+{"id": "px1534", "s5": {"verdict": "ok", "errors": []}}
+{"id": "px0571", "s5": {"verdict": "ok", "errors": []}}
+{"id": "px1052", "s5": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0323", "s5": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0220", "s5": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1280", "s5": {"verdict": "ok", "errors": []}}
+{"id": "px0091", "s5": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0919", "s5": {"verdict": "ok", "errors": []}}
+{"id": "px0307", "s5": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1110", "s5": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0013", "s5": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1230", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1201", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0454", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1194", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0579", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1350", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0442", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1232", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1667", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1540", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1500", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0458", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1624", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0992", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0295", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0040", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0595", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1783", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0556", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1145", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1803", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0202", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0863", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0147", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0293", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1018", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0697", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1577", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1391", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0897", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0055", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0652", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1206", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0506", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0450", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0889", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1314", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0616", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0518", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1424", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0929", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1063", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0479", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1648", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1058", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1317", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1560", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0656", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1579", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1143", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1569", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1127", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0670", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0006", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0027", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1399", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0902", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1565", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1478", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1541", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1502", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0647", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1719", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0194", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1635", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0360", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0882", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1048", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1303", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0044", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0317", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0022", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1209", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1431", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0067", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0809", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0087", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0246", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1114", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1205", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0500", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0995", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1617", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0758", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0808", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1721", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0122", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1476", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0611", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0964", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0842", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0909", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1166", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0526", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0550", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0835", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0998", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0306", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0438", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0804", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0643", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0661", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0586", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1390", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1047", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1147", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0780", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0343", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0042", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1121", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1150", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0730", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0901", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0976", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0028", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0687", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0869", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1298", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0075", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1263", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1616", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1372", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1095", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0987", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1474", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0321", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1773", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1718", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1039", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0036", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1169", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0532", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0910", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0125", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0769", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0219", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1111", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0311", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0925", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1042", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0285", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0337", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0039", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1259", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0883", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0973", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1242", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0982", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1693", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0427", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1193", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1552", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1593", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0231", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0941", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1470", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1587", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0155", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1674", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0584", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0739", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0540", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1378", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0913", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1115", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0210", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0837", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1344", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1480", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0104", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1326", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1294", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0666", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0679", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0260", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1398", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0753", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0612", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0692", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1446", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0908", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1395", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1136", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0793", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1563", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1521", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0871", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0221", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0677", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1564", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1510", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1690", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1526", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1785", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1244", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1811", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1475", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0891", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0870", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1094", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1038", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1396", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0742", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1233", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0880", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1608", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0604", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1049", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1738", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0274", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1088", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0239", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1561", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1079", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1271", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1611", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1397", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1197", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1457", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1512", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1683", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1527", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1221", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0384", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1361", "s5": {"error": "403 Client Error: Forbidden for url: https://openrouter.ai/api/v1/chat/completions"}}

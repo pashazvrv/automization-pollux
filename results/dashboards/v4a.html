@@ -1,0 +1,140 @@
+<html><head><meta charset='utf-8'><title>v4a</title><style>
+body{font-family:Segoe UI,Arial,sans-serif;margin:24px;background:#f6f7f9;color:#222}
+h1{font-size:22px} h2{font-size:17px;margin:26px 0 8px;border-bottom:2px solid #dde1e6;padding-bottom:4px}
+table{border-collapse:collapse;background:#fff;margin:6px 0}
+th,td{border:1px solid #dde1e6;padding:5px 10px;font-size:13px;text-align:left}
+th{background:#eef1f4}
+.card{display:inline-block;background:#fff;border:1px solid #dde1e6;border-radius:8px;padding:10px 16px;margin:4px 8px 4px 0;vertical-align:top}
+.card .v{font-size:22px;font-weight:600} .card .l{font-size:12px;color:#667}
+.good{color:#1a7f37}.bad{color:#c0392b}.warn{color:#b26a00}.mut{color:#667}
+pre{background:#fff;border:1px solid #dde1e6;padding:10px;font-size:12px;overflow:auto}
+.bar{height:10px;background:#4f8ef7;border-radius:3px}
+.small{font-size:12px;color:#667}
+</style></head><body>
+<h1>Прогон v4a <span class='small'>2026-11-16 17:58</span></h1>
+<div class='card'><div class='v'>260</div><div class='l'>запросов в метриках</div></div><div class='card'><div class='v'>98.1%</div><div class='l'>точные спаны</div></div><div class='card'><div class='v'>4</div><div class='l'>ошибок стадий</div></div><div class='card'><div class='v'>3.4</div><div class='l'>атомов в среднем</div></div><div class='card'><div class='v'>0.968</div><div class='l'>lenient F1</div></div><div class='card'><div class='v'>0.662</div><div class='l'>strict F1</div></div><div class='card'><div class='v'>70.2%</div><div class='l'>attach acc</div></div><div class='card'><div class='v'>32.0%</div><div class='l'>false-fix судьи на эталоне</div></div>
+<h2>Здоровье пайплайна</h2><table>
+<tr><th>метрика</th><th>v4a</th><th>v4a</th><th>Δ</th></tr>
+<tr><td>ошибки стадий</td><td>4</td><td>—</td><td></td></tr>
+<tr><td>точные спаны</td><td>255</td><td>—</td><td></td></tr>
+<tr><td>непокрытые куски</td><td>60</td><td>—</td><td></td></tr>
+<tr><td>lint (всего запросов)</td><td>1</td><td>—</td><td></td></tr>
+</table>
+<span class='small'>lint: {&quot;atom_uppercase&quot;: 1} | s3 переносы: {&quot;атомы&quot;: 401, &quot;background&quot;: 5, &quot;role&quot;: 1} | s4 классы: {&quot;task&quot;: 571, &quot;format&quot;: 20, &quot;not_constraint&quot;: 2}</span>
+<h2>Сопоставление с эталоном (после фиксера)</h2>
+<table>
+<tr><th>метрика</th><th>P</th><th>R</th><th>F1</th><th>ΔF1 vs v4a</th></tr>
+<tr><td>lenient</td><td>0.944</td><td>0.994</td><td>0.968</td><td></td></tr>
+<tr><td>strict</td><td>0.595</td><td>0.747</td><td>0.662</td><td></td></tr>
+<tr><td>класс T</td><td>0.984</td><td>0.996</td><td>0.990</td><td></td></tr>
+<tr><td>класс TC</td><td>0.923</td><td>0.992</td><td>0.956</td><td></td></tr>
+<tr><td>класс FC</td><td>1.000</td><td>1.000</td><td>1.000</td><td></td></tr>
+<tr><td>ci95 lenient</td><td>[0.9713, 0.9887]</td><td></td><td></td><td></td></tr>
+<tr><td>ci95 strict</td><td>[0.6238, 0.7195]</td><td></td><td></td><td></td></tr>
+</table>
+<h2>Пары и привязка</h2><table>
+<tr><th>тип</th><th>v4a</th><th>v4a</th><th>Δ</th></tr>
+<tr><td>equal</td><td>496</td><td>—</td><td></td></tr>
+<tr><td>partial</td><td>30</td><td>—</td><td></td></tr>
+<tr><td>over_split</td><td>109</td><td>—</td><td></td></tr>
+<tr><td>under_split</td><td>11</td><td>—</td><td></td></tr>
+<tr><td>attach_acc</td><td>70.2%</td><td>—</td><td></td></tr>
+</table>
+<h2>Эффект фиксера (до → после)</h2>
+<table>
+<tr><th>метрика</th><th>до</th><th>после</th><th>Δ</th></tr>
+<tr><td>lenient F1</td><td>0.968</td><td>0.968</td><td><span class="good">+0.001</span></td></tr>
+<tr><td>strict F1</td><td>0.662</td><td>0.662</td><td><span class="good">+0.001</span></td></tr>
+<tr><td>over_split</td><td>93</td><td>109</td><td><span class="bad">+16</span></td></tr>
+<tr><td>under_split</td><td>21</td><td>11</td><td><span class="good">-10</span></td></tr>
+</table>
+<span class='small'>фиксер: {&quot;fixed&quot;: 70, &quot;applied&quot;: 108, &quot;rejected&quot;: 10}</span>
+<h2>Судья</h2>
+<table>
+<tr><th>что</th><th>v4a</th><th>v4a</th><th>Δ</th></tr>
+<tr><td>на прогоне</td><td>{&#x27;ok&#x27;: 186, &#x27;fix&#x27;: 74}</td><td></td><td></td></tr>
+<tr><td>на эталоне (ложные тревоги)</td><td>{&#x27;fix&#x27;: 72, &#x27;ok&#x27;: 153, &#x27;error&#x27;: 18}</td><td></td><td></td></tr>
+<tr><td>false-fix rate (цель <10%)</td><td>32.0%</td><td>—</td><td></td></tr>
+</table>
+<span class='small'>major на эталоне: {&quot;bad_norm&quot;: 21, &quot;missing_constraint&quot;: 32, &quot;extra_constraint&quot;: 12, &quot;not_atomic&quot;: 12, &quot;span&quot;: 24, &quot;split_task&quot;: 1, &quot;background&quot;: 3, &quot;role&quot;: 2, &quot;missing_task&quot;: 3, &quot;merged_tasks&quot;: 1, &quot;wrong_class&quot;: 1, &quot;extra_task&quot;: 1}</span>
+<h2>Неделимость</h2>
+<table>
+<tr><th>метрика</th><th>v4a</th><th>v4a</th><th>Δ</th></tr>
+<tr><td>precision (цель >0.7)</td><td>0.37</td><td>—</td><td></td></tr>
+<tr><td>recall</td><td>0.94</td><td>—</td><td></td></tr>
+<tr><td>confusion (gold×model)</td><td>{&#x27;gold_yes_model_yes&#x27;: 16, &#x27;gold_yes_model_no&#x27;: 1, &#x27;gold_no_model_yes&#x27;: 27, &#x27;gold_no_model_no&#x27;: 216}</td><td></td><td></td></tr>
+</table>
+<span class='small'>причины модели: {&quot;no_task&quot;: 34, &quot;interdependent&quot;: 9}</span>
+<h2>По типам задач (худшие сверху)</h2><table>
+<tr><th>тип</th><th>атомов эталона</th><th>P</th><th>R</th><th>F1</th></tr>
+<tr><td>Написать код</td><td>78</td><td>0.790</td><td>1.000</td><td>0.883</td></tr>
+<tr><td>Изменить код</td><td>41</td><td>0.841</td><td>1.000</td><td>0.913</td></tr>
+<tr><td>Общий брейншторминг</td><td>20</td><td>0.917</td><td>1.000</td><td>0.957</td></tr>
+<tr><td>Творческий брейншторминг</td><td>18</td><td>0.920</td><td>1.000</td><td>0.958</td></tr>
+<tr><td>Составить план текста</td><td>25</td><td>0.923</td><td>1.000</td><td>0.960</td></tr>
+<tr><td>Анализ текста (объективный анализ)</td><td>41</td><td>0.956</td><td>0.976</td><td>0.965</td></tr>
+<tr><td>Интерпретация текста (субъективная оценка)</td><td>13</td><td>0.938</td><td>1.000</td><td>0.968</td></tr>
+<tr><td>Дать рекомендации</td><td>18</td><td>1.000</td><td>0.944</td><td>0.971</td></tr>
+<tr><td>Написать публицистический текст</td><td>22</td><td>1.000</td><td>0.955</td><td>0.977</td></tr>
+<tr><td>Составить план действий</td><td>28</td><td>1.000</td><td>0.964</td><td>0.982</td></tr>
+<tr><td>Перевод на русский или английский</td><td>10</td><td>1.000</td><td>1.000</td><td>1.000</td></tr>
+<tr><td>Стайл-трансфер</td><td>16</td><td>1.000</td><td>1.000</td><td>1.000</td></tr>
+<tr><td>Оценить текст</td><td>38</td><td>1.000</td><td>1.000</td><td>1.000</td></tr>
+<tr><td>Перефразировать текст</td><td>23</td><td>1.000</td><td>1.000</td><td>1.000</td></tr>
+<tr><td>Выделить из текста</td><td>16</td><td>1.000</td><td>1.000</td><td>1.000</td></tr>
+<tr><td>Логические задачи</td><td>1</td><td>1.000</td><td>1.000</td><td>1.000</td></tr>
+<tr><td>Придумать вопрос к тексту</td><td>9</td><td>1.000</td><td>1.000</td><td>1.000</td></tr>
+<tr><td>Написать художественный текст</td><td>20</td><td>1.000</td><td>1.000</td><td>1.000</td></tr>
+<tr><td>ИИ как персонаж (экспертная ситуация)</td><td>21</td><td>1.000</td><td>1.000</td><td>1.000</td></tr>
+<tr><td>Суммаризация</td><td>23</td><td>1.000</td><td>1.000</td><td>1.000</td></tr>
+<tr><td>Отредактировать текст</td><td>13</td><td>1.000</td><td>1.000</td><td>1.000</td></tr>
+<tr><td>Написать научный текст</td><td>27</td><td>1.000</td><td>1.000</td><td>1.000</td></tr>
+<tr><td>Прикладной брейншторминг</td><td>16</td><td>1.000</td><td>1.000</td><td>1.000</td></tr>
+<tr><td>Написать официально-деловой текст</td><td>47</td><td>1.000</td><td>1.000</td><td>1.000</td></tr>
+<tr><td>Информационный поиск</td><td>1</td><td>1.000</td><td>1.000</td><td>1.000</td></tr>
+<tr><td>ИИ как персонаж (бытовая ситуация)</td><td>8</td><td>1.000</td><td>1.000</td><td>1.000</td></tr>
+<tr><td>Дать совет</td><td>15</td><td>1.000</td><td>1.000</td><td>1.000</td></tr>
+<tr><td>Написать инструкцию</td><td>15</td><td>1.000</td><td>1.000</td><td>1.000</td></tr>
+<tr><td>Задачи про слова (Редакторский брейншторм)</td><td>18</td><td>1.000</td><td>1.000</td><td>1.000</td></tr>
+<tr><td>Объяснить концепт</td><td>18</td><td>1.000</td><td>1.000</td><td>1.000</td></tr>
+<tr><td>Угадать объект по описанию</td><td>5</td><td>1.000</td><td>1.000</td><td>1.000</td></tr>
+</table>
+<h2>Худшие запросы (топ-15)</h2><table>
+<tr><th>id</th><th>запрос</th><th>пропущено</th><th>лишнее</th><th>over</th><th>under</th></tr>
+<tr><td>px0217</td><td>Дана следующая задача:
+&quot;Сегодня, во время того, как лицеисты находятся на уроках, Зуфар абый должен выполнить непростую </td><td><span class='bad'></span></td><td><span class='warn'>вход программы с целыми числами n и k в первой строке; значение n от 1 до 10^5; значение k от 1 до n; вход программы с n целыми числами c_i во второй строке через пробел; значение c_i от 0 до 100; вых</span></td><td>0</td><td>0</td></tr>
+<tr><td>px0210</td><td>Дан массив целых чисел arr. Нужно найти максимальную сумму подотрезка, но разрешается &quot;пропускать&quot; ровно один элемент по</td><td><span class='bad'></span></td><td><span class='warn'>входной массив arr из целых чисел; максимальная сумма подотрезка; подотрезок с возможностью пропустить ровно один элемент внутри него для увеличения итоговой суммы; код на Python; имя функции max_suba</span></td><td>1</td><td>0</td></tr>
+<tr><td>px0260</td><td>Есть поле размером m х n. Пустые ячейки в этом поле обозначены символом &#x27;x&#x27;. В этом лесу растут деревья обозначенные сим</td><td><span class='bad'></span></td><td><span class='warn'>входное поле размером m × n; пустые ячейки поля обозначены символом &#x27;x&#x27;; деревья в поле обозначены символом &#x27;T&#x27;; путник может передвигаться по пустым ячейкам; путник не может проходить сквозь деревья</span></td><td>3</td><td>0</td></tr>
+<tr><td>px0285</td><td>Задача: Требуется найти вторую по величине зарплату в таблице employees с полями имя работника employee_name, зарплата s</td><td><span class='bad'></span></td><td><span class='warn'>оба кода решения для поиска второй по величине зарплаты; код решения с таблицей employees; код решения с полем employee_name — именем работника таблицы employees; код решения с полем salary — зарплато</span></td><td>0</td><td>0</td></tr>
+<tr><td>px1298</td><td>Представьте, что у вас есть маршрутный граф, организованный в виде треугольника, где каждая строка представляет уровень </td><td><span class='bad'></span></td><td><span class='warn'>входной граф маршрутов в форме треугольника; каждая строка входного графа представляет уровень перелётов между городами; каждая клетка входного графа содержит расстояние перелёта между текущим и следу</span></td><td>3</td><td>0</td></tr>
+<tr><td>px0725</td><td>Напишите функцию expandString на языке JavaScript, которая принимает строку string, содержащую строчные латинские буквы,</td><td><span class='bad'></span></td><td><span class='warn'>входной параметр: строка string; строка результата при числе перед группой — «Неверный формат: число не может находиться перед группой»</span></td><td>2</td><td>0</td></tr>
+<tr><td>px0091</td><td>В таблице checks есть поля:
+
+Дата чека - date
+Номер чека - id_check
+Тип операции возврат или приход - type
+Сумма чека - </td><td><span class='bad'></span></td><td><span class='warn'>значение поля amount с включённым налогом; налоговая ставка 18%</span></td><td>0</td><td>1</td></tr>
+<tr><td>px0219</td><td>Дана следующая функция:
+
+import json
+from urllib.request import urlopen
+
+def check_api(url):
+    response = urlopen(url)</td><td><span class='bad'></span></td><td><span class='warn'>функция с именем check_api; функция с параметром url</span></td><td>0</td><td>0</td></tr>
+<tr><td>px1221</td><td>Предложи способы победить в шахматах Дина Лижэня, если я Петя из Саранска, мне 5 лет, мама не отпускает меня на соревнов</td><td><span class='bad'></span></td><td><span class='warn'>способы победить Дина Лижэня в шахматах без участия в соревнованиях; доступные пятилетнему ребёнку способы победить Дина Лижэня в шахматах</span></td><td>0</td><td>0</td></tr>
+<tr><td>px1783</td><td>Я хочу снять фильм про Сергея Бодрова — младшего от лица другого человека. Опираясь на биографию Сергея Бордова, предлож</td><td><span class='bad'></span></td><td><span class='warn'>человек, отличный от актера, от лица которого прослеживается жизнь актера</span></td><td>1</td><td>0</td></tr>
+<tr><td>px1391</td><td>Проанализируй связь между обезлесиванием и изменением состава атмосферы на основе данного фрагмента монографии: 
+
+Вырубк</td><td><span class='bad'></span></td><td><span class='warn'>анализ связи на основе данного фрагмента монографии</span></td><td>0</td><td>0</td></tr>
+<tr><td>px1314</td><td>Придумай биографию пяти персонажам, которые проходят реабилитацию от наркотической зависимости в дорогом рехабе. Каждый </td><td><span class='bad'></span></td><td><span class='warn'>связанные истории персонажей</span></td><td>1</td><td>0</td></tr>
+<tr><td>px0479</td><td>Набросай-ка мне тезисы для вот какой темы. Я тут пишу диссертацию о восприятии лунатизма среди индийцев британскими врач</td><td><span class='bad'></span></td><td><span class='warn'>Подсказать, с какой стороны подступиться к теме</span></td><td>0</td><td>0</td></tr>
+<tr><td>px1399</td><td>Проанализируй этот текст, выдели главную идею, охарактеризуй место действия.
+
+Точка схода в этой комнате – портрет праде</td><td><span class='bad'></span></td><td><span class='warn'>Выделить идею текста</span></td><td>0</td><td>0</td></tr>
+<tr><td>px0758</td><td>Ниже представлен код на языке JavaScript. Необходимо изменить его согласно условию задачи.
+
+Код:
+
+function cleanArray(ar</td><td><span class='bad'></span></td><td><span class='warn'>код на JavaScript</span></td><td>1</td><td>0</td></tr>
+</table>
+</body></html>

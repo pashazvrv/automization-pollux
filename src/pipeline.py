@@ -27,6 +27,21 @@ ANCHOR = "……"
 def prompt_file(name):
     return open(os.path.join(ROOT, "prompts", name), encoding="utf-8").read()
 
+def fewshot_file(name):
+    """Few-shot примеры к промпту (prompts/fewshot/<имя>); пустая строка, если файла нет."""
+    p = os.path.join(ROOT, "prompts", "fewshot", name)
+    return open(p, encoding="utf-8").read().strip() if os.path.exists(p) else ""
+
+def assemble(system_file, user):
+    """Собирает user-сообщение: few-shot примеры отделены рамками от рабочего входа,
+    чтобы модель не принимала пример за разбираемый запрос."""
+    few = fewshot_file(system_file)
+    if not few:
+        return user
+    return ("Ниже — обучающие примеры правильных разборов. Это ПРИМЕРЫ, их разбирать не нужно.\n\n"
+            "════ НАЧАЛО ПРИМЕРОВ ════\n\n" + few + "\n\n════ КОНЕЦ ПРИМЕРОВ ════\n\n"
+            "Теперь выполни ту же работу для нового запроса (это НЕ пример):\n\n" + user)
+
 def parse_json(txt):
     txt = re.sub(r"<think>.*?</think>", "", txt, flags=re.S).strip()
     a, b = txt.find("{"), txt.rfind("}")
@@ -36,6 +51,7 @@ def parse_json(txt):
 
 def ask(model, system_file, user, max_tokens=8192, tries=3):
     system = prompt_file(system_file)
+    user = assemble(system_file, user)
     last = None
     for n in range(1, tries + 1):
         t0 = time.time()

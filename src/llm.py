@@ -1,6 +1,23 @@
+"""Клиент LLM через LiteLLM-гейтвей (gigagateway).
+
+Эндпоинт OpenAI-совместимый: POST <LLM_URL> с заголовком X-Api-Key.
+Провайдер фиксируется полем "provider": {"only": [...]} (LLM_PROVIDER, по умолчанию "alibaba";
+пустая строка — поле не отправляется).
+
+Слоты моделей (имя = переменная окружения с именем модели на гейтвее):
+  gpt  -> LLM_MODEL         разметчик (S1–S4)
+  gpt2 -> LLM_MODEL_JUDGE   судья (S5), фиксер (S6), оценщик в eval_v4
+  glm  -> LLM_MODEL_GLM     третья модель для сравнений (по умолчанию = LLM_MODEL)
+"""
 import os, json, shutil, subprocess, time, requests
-from dotenv import load_dotenv
-load_dotenv()
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass   # переменные уже в окружении или команда работает без LLM (report)
+
+DEFAULT_URL = "https://gigagateway.eye.salute.ru/litellm/v1/chat/completions"
+
 
 def _extract(data):
     """Достаёт текст ответа; пустой или обрезанный ответ — ошибка с диагнозом."""
@@ -14,6 +31,7 @@ def _extract(data):
         raise RuntimeError(f"length: ответ обрезан по max_tokens; usage={data.get('usage')}")
     return content
 
+
 def _post(url, headers, payload, retries=2):
     for i in range(retries):
         try:
@@ -25,9 +43,9 @@ def _post(url, headers, payload, retries=2):
                 raise
             time.sleep(2 ** i)
 
+
 def _post_curl(url, headers, payload, retries=2):
-    """Вызов через системный curl: у части сетей Python-SSL к tuna.am обрывается.
-    Повторяет только сетевые сбои; пустой/обрезанный ответ поднимается наверх сразу."""
+    """Запасной путь через системный curl (на случай проблем Python-SSL в сети очереди)."""
     curl = shutil.which("curl.exe") or shutil.which("curl")
     cmd = [curl, "-sS", "-m", "300", "-X", "POST", url]
     for k, v in headers.items():
@@ -42,25 +60,36 @@ def _post_curl(url, headers, payload, retries=2):
             raise RuntimeError("curl: " + r.stderr.decode("utf-8", "replace")[:300])
         time.sleep(2 ** i)
 
-def glm(messages, max_tokens=2048, temperature=0.0):
-    payload = {"model": os.environ["GLM_MODEL"], "messages": messages,
-               "max_tokens": max_tokens, "temperature": temperature}
-    if os.environ.get("GLM_NO_THINK", "1") == "1":
-        payload["chat_template_kwargs"] = {"enable_thinking": False}  # отключить рассуждение (если сервер поддерживает)
-    post = _post if os.environ.get("GLM_USE_CURL", "1") == "0" else _post_curl
-    return post(os.environ["GLM_URL"],
-                {"X-Token": os.environ["GLM_TOKEN"], "Content-Type": "application/json"}, payload)
 
-def _openrouter(model_env, messages, max_tokens, temperature):
-    return _post("https://openrouter.ai/api/v1/chat/completions",
-                 {"Authorization": "Bearer " + os.environ["OPENROUTER_KEY"]},
-                 {"model": os.environ[model_env], "messages": messages,
-                  "max_tokens": max_tokens, "temperature": temperature})
+def _chat(model, messages, max_tokens, temperature):
+    if not model:
+        raise RuntimeError("не задано имя модели: проверь LLM_MODEL / LLM_MODEL_JUDGE / LLM_MODEL_GLM в .env")
+    url = os.environ.get("LLM_URL", DEFAULT_URL)
+    key = os.environ.get("LLM_KEY")
+    if not key:
+        raise RuntimeError("не задан LLM_KEY (ключ гейтвея) в .env")
+    headers = {"X-Api-Key": key, "Content-Type": "application/json"}
+    payload = {"model": model, "messages": messages,
+               "max_tokens": max_tokens, "temperature": temperature}
+    prov = os.environ.get("LLM_PROVIDER", "alibaba").strip()
+    if prov:
+        payload["provider"] = {"only": [p.strip() for p in prov.split(",") if p.strip()]}
+    post = _post_curl if os.environ.get("LLM_USE_CURL", "0") == "1" else _post
+    return post(url, headers, payload)
+
 
 def gpt(messages, max_tokens=2048, temperature=0.0):
-    """Основная модель OpenRouter (OPENROUTER_MODEL)."""
-    return _openrouter("OPENROUTER_MODEL", messages, max_tokens, temperature)
+    """Основная модель — разметчик (LLM_MODEL)."""
+    return _chat(os.environ.get("LLM_MODEL"), messages, max_tokens, temperature)
+
 
 def gpt2(messages, max_tokens=2048, temperature=0.0):
-    """Вторая модель OpenRouter (OPENROUTER_MODEL_2) — другая модель для судьи."""
-    return _openrouter("OPENROUTER_MODEL_2", messages, max_tokens, temperature)
+    """Модель судьи/фиксера/оценщика (LLM_MODEL_JUDGE; по умолчанию = LLM_MODEL)."""
+    return _chat(os.environ.get("LLM_MODEL_JUDGE") or os.environ.get("LLM_MODEL"),
+                 messages, max_tokens, temperature)
+
+
+def glm(messages, max_tokens=2048, temperature=0.0):
+    """Третья модель для сравнений (LLM_MODEL_GLM; по умолчанию = LLM_MODEL)."""
+    return _chat(os.environ.get("LLM_MODEL_GLM") or os.environ.get("LLM_MODEL"),
+                 messages, max_tokens, temperature)

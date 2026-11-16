@@ -131,6 +131,23 @@ def prf(tp_m, m, tp_g, g):
     F = 2 * P * Rr / (P + Rr) if P and Rr else (0.0 if (P is not None and Rr is not None) else None)
     return {"P": P, "R": Rr, "F1": F}
 
+def bootstrap_ci(per_prompt, B=2000, seed=42):
+    """95% ДИ для мягкого и строгого F1: бутстреп по запросам (микро-F1 в каждой реплике).
+    per_prompt: [(P_len, R_len, P_str, R_str), ...] — доли попаданий по каждому запросу."""
+    import random
+    if not per_prompt: return None
+    rnd = random.Random(seed); n = len(per_prompt)
+    def f1(P, R): return 2 * P * R / (P + R) if P + R else 0.0
+    L, S = [], []
+    for _ in range(B):
+        smp = [per_prompt[rnd.randrange(n)] for _ in range(n)]
+        Pl = sum(x[0] for x in smp) / n; Rl = sum(x[1] for x in smp) / n
+        Ps = sum(x[2] for x in smp) / n; Rs = sum(x[3] for x in smp) / n
+        L.append(f1(Pl, Rl)); S.append(f1(Ps, Rs))
+    L.sort(); S.sort()
+    lo, hi = int(0.025 * B), int(0.975 * B)
+    return {"lenient_F1": [round(L[lo], 4), round(L[hi], 4)], "strict_F1": [round(S[lo], 4), round(S[hi], 4)]}
+
 def cmd_report():
     run = {k: v for k, v in load_jsonl(RUN).items() if k not in EXCL}
     gold = {g["id"]: g for g in json.load(open(GOLD, encoding="utf-8")) if g["id"] not in EXCL}
@@ -183,7 +200,7 @@ def cmd_report():
     # --- сопоставление атомов
     def agg(which):
         T = collections.Counter(); CC = collections.Counter(); A = [0, 0]; per_type = collections.defaultdict(collections.Counter); n = 0
-        examples = []
+        examples = []; per_prompt = []
         for i, o in mt.items():
             g = gold[i]; r = run[i]
             if g["indivisible"] or r["export"]["indivisible"]: continue
@@ -193,6 +210,8 @@ def cmd_report():
             G = atoms_of(g); Mm = atoms_of(e); s, cc, att = score(G, Mm, res); n += 1
             T.update(s); CC.update(cc); A[0] += att[0]; A[1] += att[1]
             tt = items[i].get("task_type", "?"); per_type[tt].update({"G": s["G"], "M": s["M"], "G_hit": s["G_hit"], "M_hit": s["M_hit"]})
+            per_prompt.append((s["M_hit"] / s["M"] if s["M"] else 1.0, s["G_hit"] / s["G"] if s["G"] else 1.0,
+                               s["one2one_equal"] / s["M"] if s["M"] else 1.0, s["one2one_equal"] / s["G"] if s["G"] else 1.0))
             if which == "after" and (s["G"] - s["G_hit"] or s["M"] - s["M_hit"] or s["over_split"] or s["under_split"]):
                 pairs = res.get("pairs", [])
                 hg = {x for p in pairs for x in p.get("g", []) if isinstance(x, int)}; hm = {x for p in pairs for x in p.get("m", []) if isinstance(x, int)}
@@ -207,6 +226,7 @@ def cmd_report():
                "class_confusion": {f"{a}->{b}": v for (a, b), v in CC.items()},
                "attach_acc": A[0] / A[1] if A[1] else None,
                "per_task_type": {k: prf(v["M_hit"], v["M"], v["G_hit"], v["G"]) | {"n_atoms_gold": v["G"]} for k, v in per_type.items()}}
+        out["ci95"] = bootstrap_ci(per_prompt)
         if which == "after": out["examples"] = sorted(examples, key=lambda x: -(len(x["missed"]) + len(x["extra"])))[:25]
         return out
     M["match_after"] = agg("after"); M["match_before"] = agg("before")

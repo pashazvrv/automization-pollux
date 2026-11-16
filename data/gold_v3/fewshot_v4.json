@@ -1,98 +1,154 @@
 {
  "px1217": [
-  "prompts/s2_extract.txt"
+  "prompts\\fewshot\\s2_extract.txt",
+  "prompts\\s2_extract.txt"
+ ],
+ "px0174": [
+  "prompts\\s2_extract.txt"
  ],
  "px0169": [
-  "prompts/s2_extract.txt",
-  "prompts/s5_judge.txt"
+  "prompts\\fewshot\\s2_extract.txt",
+  "prompts\\fewshot\\s5_judge.txt",
+  "prompts\\s2_extract.txt"
  ],
  "px1800": [
-  "prompts/s2_extract.txt",
-  "prompts/s3_atomize.txt",
-  "prompts/s5_judge.txt"
+  "prompts\\fewshot\\s2_extract.txt",
+  "prompts\\fewshot\\s3_atomize.txt",
+  "prompts\\fewshot\\s5_judge.txt",
+  "prompts\\s2_extract.txt"
  ],
  "px0124": [
-  "prompts/s5_judge.txt"
+  "prompts\\fewshot\\s5_judge.txt"
  ],
  "px1266": [
-  "prompts/s2_extract.txt"
+  "prompts\\s2_extract.txt"
+ ],
+ "px0602": [
+  "prompts\\fewshot\\s2_extract.txt",
+  "prompts\\s3_atomize.txt"
  ],
  "px0281": [
-  "prompts/s2_extract.txt",
-  "prompts/s5_judge.txt",
-  "prompts/s6_fix.txt"
+  "prompts\\fewshot\\s2_extract.txt",
+  "prompts\\fewshot\\s5_judge.txt",
+  "prompts\\fewshot\\s6_fix.txt"
  ],
  "px0182": [
-  "prompts/s2_extract.txt"
+  "prompts\\fewshot\\s2_extract.txt",
+  "prompts\\s2_extract.txt"
  ],
  "px0565": [
-  "prompts/s2_extract.txt",
-  "prompts/s3_atomize.txt"
+  "prompts\\fewshot\\s2_extract.txt",
+  "prompts\\fewshot\\s3_atomize.txt"
+ ],
+ "px0289": [
+  "prompts\\fewshot\\s2_extract.txt",
+  "prompts\\fewshot\\s3_atomize.txt",
+  "prompts\\s2_extract.txt"
  ],
  "px0387": [
-  "prompts/s2_extract.txt",
-  "prompts/s6_fix.txt"
+  "prompts\\fewshot\\s2_extract.txt",
+  "prompts\\fewshot\\s6_fix.txt",
+  "prompts\\s2_extract.txt",
+  "prompts\\s6_fix.txt"
  ],
  "px1680": [
-  "prompts/s2_extract.txt"
+  "prompts\\fewshot\\s2_extract.txt",
+  "prompts\\s2_extract.txt"
  ],
  "px1231": [
-  "prompts/s2_extract.txt"
+  "prompts\\fewshot\\s2_extract.txt"
  ],
  "px1382": [
-  "prompts/s6_fix.txt"
+  "prompts\\s6_fix.txt"
  ],
  "px0111": [
-  "prompts/s2_extract.txt"
+  "prompts\\fewshot\\s2_extract.txt",
+  "prompts\\s2_extract.txt"
+ ],
+ "px1253": [
+  "prompts\\s2_extract.txt"
+ ],
+ "px1534": [
+  "prompts\\s2_extract.txt"
  ],
  "px0571": [
-  "prompts/s2_extract.txt"
+  "prompts\\s2_extract.txt"
  ],
  "px1052": [
-  "prompts/s5_judge.txt"
+  "prompts\\fewshot\\s5_judge.txt"
  ],
  "px0323": [
-  "prompts/s2_extract.txt"
+  "prompts\\s2_extract.txt"
  ],
- "px1201": [
-  "prompts/s2_extract.txt"
+ "px0220": [
+  "prompts\\s1_material.txt"
  ],
  "px1350": [
-  "prompts/s3_atomize.txt",
-  "prompts/s5_judge.txt"
+  "prompts\\fewshot\\s3_atomize.txt",
+  "prompts\\fewshot\\s5_judge.txt"
  ],
- "px1624": [
-  "prompts/s2_extract.txt"
+ "px1232": [
+  "prompts\\s2_extract.txt"
+ ],
+ "px0458": [
+  "prompts\\fewshot\\s3_atomize.txt",
+  "prompts\\s2_extract.txt",
+  "prompts\\s5_judge.txt"
  ],
  "px1145": [
-  "prompts/s2_extract.txt",
-  "prompts/s3_atomize.txt",
-  "prompts/s5_judge.txt"
+  "prompts\\fewshot\\s2_extract.txt",
+  "prompts\\fewshot\\s3_atomize.txt",
+  "prompts\\fewshot\\s5_judge.txt"
  ],
  "px0897": [
-  "prompts/s3_atomize.txt"
+  "prompts\\fewshot\\s3_atomize.txt"
+ ],
+ "px0055": [
+  "prompts\\s2_extract.txt",
+  "prompts\\s5_judge.txt"
  ],
  "px0506": [
-  "prompts/s4_classify.txt"
+  "prompts\\s4_classify.txt"
  ],
  "px0616": [
-  "prompts/s5_judge.txt"
+  "prompts\\fewshot\\s2_extract.txt",
+  "prompts\\fewshot\\s5_judge.txt",
+  "prompts\\s1_material.txt"
  ],
  "px0902": [
-  "prompts/s3_atomize.txt"
+  "prompts\\fewshot\\s3_atomize.txt"
+ ],
+ "px0661": [
+  "prompts\\fewshot\\s3_atomize.txt"
  ],
  "px1121": [
-  "prompts/s3_atomize.txt"
+  "prompts\\fewshot\\s3_atomize.txt",
+  "prompts\\s3_atomize.txt"
  ],
  "px1111": [
-  "prompts/s2_extract.txt",
-  "prompts/s3_atomize.txt",
-  "prompts/s5_judge.txt"
+  "prompts\\fewshot\\s2_extract.txt",
+  "prompts\\fewshot\\s3_atomize.txt",
+  "prompts\\fewshot\\s5_judge.txt"
  ],
  "px1042": [
-  "prompts/s2_extract.txt"
+  "prompts\\fewshot\\s2_extract.txt"
+ ],
+ "px0584": [
+  "prompts\\fewshot\\s3_atomize.txt"
+ ],
+ "px0104": [
+  "prompts\\fewshot\\s2_extract.txt",
+  "prompts\\fewshot\\s3_atomize.txt",
+  "prompts\\s2_extract.txt"
+ ],
+ "px1294": [
+  "prompts\\s2_extract.txt"
  ],
  "px0679": [
-  "prompts/s3_atomize.txt"
+  "prompts\\fewshot\\s3_atomize.txt"
+ ],
+ "px1398": [
+  "prompts\\s2_extract.txt",
+  "prompts\\s5_judge.txt"
  ]
 }

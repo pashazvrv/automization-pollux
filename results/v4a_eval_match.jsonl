@@ -1,0 +1,300 @@
+{"id": "px0933", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}}
+{"id": "px1217", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px0174", "after": {"pairs": [{"g": [1], "m": [3], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1, 2, 3], "rel": "equal"}]}}
+{"id": "px0169", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px0140", "after": {"pairs": [{"g": [1, 3], "m": [1], "rel": "partial"}]}}
+{"id": "px1385", "after": {"pairs": [{"g": [1, 2], "m": [1], "rel": "equal"}]}}
+{"id": "px0725", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [4], "rel": "equal"}, {"g": [4], "m": [5], "rel": "equal"}, {"g": [5], "m": [6], "rel": "equal"}, {"g": [6], "m": [7, 11], "rel": "equal"}, {"g": [7], "m": [8], "rel": "equal"}, {"g": [8], "m": [9, 10], "rel": "equal"}, {"g": [9], "m": [13], "rel": "equal"}, {"g": [10], "m": [12], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [4], "rel": "equal"}, {"g": [4], "m": [5], "rel": "equal"}, {"g": [5], "m": [6], "rel": "equal"}, {"g": [6], "m": [7, 11], "rel": "equal"}, {"g": [7], "m": [8], "rel": "equal"}, {"g": [8], "m": [9, 10], "rel": "equal"}, {"g": [9], "m": [13], "rel": "equal"}, {"g": [10], "m": [12], "rel": "equal"}]}}
+{"id": "px1432", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}}
+{"id": "px1800", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}, {"g": [5], "m": [5], "rel": "equal"}, {"g": [6], "m": [6], "rel": "equal"}, {"g": [7], "m": [7], "rel": "equal"}]}}
+{"id": "px1154", "after": {"pairs": []}}
+{"id": "px0124", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}]}}
+{"id": "px0217", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px1007", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px0904", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px0423", "after": {"pairs": []}}
+{"id": "px0117", "after": {"pairs": []}}
+{"id": "px1030", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px0216", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px0157", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px1060", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}]}}
+{"id": "px1027", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px1266", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px0602", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [3], "m": [2], "rel": "equal"}]}}
+{"id": "px0860", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}}
+{"id": "px0980", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px0281", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [3], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px0162", "after": {"pairs": [{"g": [1, 2], "m": [1], "rel": "equal"}]}}
+{"id": "px0182", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}]}}
+{"id": "px0565", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px0289", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [5], "rel": "equal"}]}}
+{"id": "px1273", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}]}}
+{"id": "px0387", "after": {"pairs": []}}
+{"id": "px0132", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px1680", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [3], "rel": "partial"}, {"g": [3], "m": [4], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [3], "rel": "equal"}]}}
+{"id": "px1231", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}]}}
+{"id": "px1382", "after": {"pairs": []}, "before": {"pairs": []}}
+{"id": "px0553", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px1646", "after": {"pairs": []}}
+{"id": "px0089", "after": {"pairs": []}}
+{"id": "px0374", "after": {"pairs": []}, "before": {"pairs": []}}
+{"id": "px1589", "after": {"pairs": []}}
+{"id": "px0240", "after": {"pairs": []}}
+{"id": "px0159", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}]}}
+{"id": "px0111", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2, 3, 4, 5, 6], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2, 3, 4], "rel": "equal"}]}}
+{"id": "px1286", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}, {"g": [5], "m": [5], "rel": "equal"}, {"g": [6], "m": [6], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}, {"g": [5], "m": [5], "rel": "partial"}, {"g": [6], "m": [6], "rel": "equal"}]}}
+{"id": "px1253", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px0537", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}, {"g": [2], "m": [3], "rel": "equal"}, {"g": [3], "m": [4], "rel": "equal"}, {"g": [4], "m": [5], "rel": "equal"}, {"g": [5], "m": [6], "rel": "equal"}, {"g": [6], "m": [7], "rel": "equal"}, {"g": [7], "m": [8], "rel": "equal"}]}}
+{"id": "px0740", "after": {"pairs": []}}
+{"id": "px0978", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px1573", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}}
+{"id": "px1601", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px1545", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px1104", "after": {"pairs": [{"g": [1, 3], "m": [1], "rel": "equal"}, {"g": [4], "m": [2], "rel": "equal"}, {"g": [5], "m": [3], "rel": "equal"}, {"g": [6], "m": [4], "rel": "equal"}]}}
+{"id": "px1549", "after": {"pairs": [{"g": [1, 2], "m": [1], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}}
+{"id": "px1534", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3, 4, 7, 9], "rel": "equal"}, {"g": [4], "m": [5, 6], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3, 4, 7, 9], "rel": "equal"}, {"g": [4], "m": [5, 6], "rel": "equal"}]}}
+{"id": "px0571", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px1052", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px0323", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px0220", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px1280", "after": {"pairs": [{"g": [1], "m": [1, 2, 4], "rel": "equal"}, {"g": [2], "m": [3], "rel": "partial"}]}, "before": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}, {"g": [2], "m": [3], "rel": "equal"}]}}
+{"id": "px0091", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3, 4], "m": [5], "rel": "equal"}, {"g": [5], "m": [6], "rel": "partial"}, {"g": [6], "m": [7], "rel": "partial"}, {"g": [7], "m": [8], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3, 4], "m": [5], "rel": "equal"}, {"g": [5], "m": [6], "rel": "partial"}, {"g": [6], "m": [7], "rel": "partial"}, {"g": [7], "m": [8], "rel": "equal"}]}}
+{"id": "px0919", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}}
+{"id": "px0307", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}]}}
+{"id": "px1110", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}, {"g": [2], "m": [3], "rel": "equal"}]}}
+{"id": "px0013", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}}
+{"id": "px1230", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "partial"}]}}
+{"id": "px1201", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "partial"}, {"g": [4], "m": [4], "rel": "partial"}, {"g": [5], "m": [5], "rel": "equal"}]}}
+{"id": "px0454", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "partial"}]}}
+{"id": "px1194", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px0579", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}}
+{"id": "px1350", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}, {"g": [5], "m": [5], "rel": "equal"}]}}
+{"id": "px0442", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "partial"}, {"g": [2], "m": [3], "rel": "equal"}, {"g": [3], "m": [4], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1, 2], "rel": "partial"}, {"g": [2], "m": [3], "rel": "equal"}, {"g": [3], "m": [4], "rel": "equal"}]}}
+{"id": "px1232", "after": {"pairs": [{"g": [1], "m": [1], "rel": "partial"}, {"g": [2], "m": [5], "rel": "equal"}, {"g": [3], "m": [6], "rel": "equal"}]}}
+{"id": "px1578", "after": {"pairs": []}}
+{"id": "px1667", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}}
+{"id": "px1540", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px1500", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2, 3, 4, 5], "rel": "equal"}, {"g": [3], "m": [6, 7], "rel": "equal"}, {"g": [4], "m": [8], "rel": "equal"}]}}
+{"id": "px0458", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}}
+{"id": "px1624", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}}
+{"id": "px0992", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px0295", "after": {"pairs": [{"g": [1], "m": [1], "rel": "partial"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px0040", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}]}}
+{"id": "px0595", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px1783", "after": {"pairs": [{"g": [1], "m": [1, 3], "rel": "equal"}, {"g": [2], "m": [4], "rel": "equal"}]}}
+{"id": "px0556", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2, 3, 4, 5], "rel": "equal"}, {"g": [3], "m": [6], "rel": "equal"}]}}
+{"id": "px1145", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}]}}
+{"id": "px1803", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}, {"g": [2], "m": [3], "rel": "equal"}, {"g": [3], "m": [4], "rel": "equal"}, {"g": [4], "m": [5], "rel": "equal"}, {"g": [5], "m": [6], "rel": "equal"}, {"g": [6], "m": [7], "rel": "equal"}, {"g": [7], "m": [8], "rel": "equal"}]}}
+{"id": "px1661", "after": {"pairs": []}, "before": {"pairs": []}}
+{"id": "px0202", "after": {"pairs": [{"g": [1], "m": [1, 3, 4], "rel": "equal"}, {"g": [2], "m": [2, 6], "rel": "equal"}, {"g": [3], "m": [5], "rel": "equal"}]}}
+{"id": "px0863", "after": {"pairs": [{"g": [1, 4], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}, "before": {"pairs": [{"g": [1, 4], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px0147", "after": {"pairs": [{"g": [1], "m": [1, 2, 3, 4], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1, 2, 3, 4, 5], "rel": "equal"}]}}
+{"id": "px0293", "after": {"pairs": []}}
+{"id": "px1018", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}}
+{"id": "px0697", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}, {"g": [5], "m": [5], "rel": "equal"}, {"g": [6], "m": [6], "rel": "equal"}, {"g": [7], "m": [7], "rel": "equal"}, {"g": [8], "m": [8], "rel": "equal"}]}}
+{"id": "px1577", "after": {"pairs": [{"g": [1, 2], "m": [1], "rel": "equal"}]}}
+{"id": "px1391", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}}
+{"id": "px0897", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px0055", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px0652", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [3, 4], "rel": "equal"}, {"g": [3], "m": [2, 5], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2, 3], "rel": "equal"}, {"g": [3], "m": [4], "rel": "equal"}]}}
+{"id": "px1206", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3, 4, 5, 6], "rel": "equal"}]}}
+{"id": "px0506", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px0450", "after": {"pairs": [{"g": [1], "m": [1, 3], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [4], "rel": "equal"}]}}
+{"id": "px1791", "after": {"pairs": []}}
+{"id": "px0846", "after": {"pairs": []}}
+{"id": "px0889", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px1314", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2, 3], "rel": "equal"}, {"g": [3], "m": [4], "rel": "equal"}, {"g": [4], "m": [5], "rel": "partial"}, {"g": [5], "m": [6], "rel": "partial"}, {"g": [6], "m": [7], "rel": "equal"}, {"g": [7], "m": [9], "rel": "equal"}]}}
+{"id": "px0616", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px0518", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2, 3], "rel": "equal"}, {"g": [3], "m": [4, 5], "rel": "equal"}]}}
+{"id": "px1424", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px0929", "after": {"pairs": [{"g": [1], "m": [1, 4], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px1063", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px0479", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}}
+{"id": "px1648", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [3], "rel": "equal"}, {"g": [3], "m": [2], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [3], "rel": "equal"}, {"g": [3], "m": [2], "rel": "equal"}]}}
+{"id": "px1058", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px1317", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}}
+{"id": "px1560", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}, {"g": [5], "m": [5], "rel": "equal"}, {"g": [6], "m": [6, 7], "rel": "equal"}, {"g": [7], "m": [8], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2, 3], "m": [2], "rel": "equal"}, {"g": [4], "m": [3], "rel": "equal"}, {"g": [5], "m": [4], "rel": "equal"}, {"g": [6], "m": [5, 6], "rel": "partial"}, {"g": [7], "m": [7], "rel": "equal"}]}}
+{"id": "px0060", "after": {"pairs": []}, "before": {"pairs": []}}
+{"id": "px0656", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}, {"g": [2], "m": [3], "rel": "equal"}, {"g": [3], "m": [4], "rel": "equal"}, {"g": [4], "m": [5, 6], "rel": "equal"}, {"g": [5], "m": [7], "rel": "partial"}]}, "before": {"pairs": [{"g": [1], "m": [1, 2, 3], "rel": "equal"}, {"g": [2], "m": [4], "rel": "equal"}, {"g": [3], "m": [5], "rel": "equal"}, {"g": [4], "m": [6, 7], "rel": "equal"}, {"g": [5], "m": [8], "rel": "partial"}]}}
+{"id": "px1579", "after": {"pairs": [{"g": [1], "m": [1, 3], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px1143", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}, {"g": [2], "m": [3], "rel": "equal"}]}}
+{"id": "px1569", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}]}}
+{"id": "px1127", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}, {"g": [2], "m": [3], "rel": "equal"}, {"g": [3], "m": [4], "rel": "equal"}, {"g": [4], "m": [5], "rel": "equal"}, {"g": [5], "m": [6], "rel": "equal"}]}}
+{"id": "px0670", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}]}}
+{"id": "px0006", "after": {"pairs": [{"g": [1], "m": [1, 3, 4], "rel": "equal"}, {"g": [2], "m": [2, 6], "rel": "equal"}, {"g": [3], "m": [5], "rel": "equal"}]}}
+{"id": "px0027", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px1399", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [4], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px0902", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3, 4], "m": [3], "rel": "equal"}]}}
+{"id": "px1565", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [7, 8], "rel": "equal"}, {"g": [3], "m": [2], "rel": "equal"}, {"g": [4], "m": [3], "rel": "equal"}, {"g": [5], "m": [4], "rel": "equal"}, {"g": [6], "m": [5], "rel": "equal"}, {"g": [7], "m": [6], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [7, 8], "rel": "equal"}, {"g": [3], "m": [2], "rel": "equal"}, {"g": [4], "m": [3], "rel": "equal"}, {"g": [5], "m": [4], "rel": "equal"}, {"g": [6], "m": [5], "rel": "equal"}, {"g": [7], "m": [6], "rel": "equal"}]}}
+{"id": "px1478", "after": {"pairs": [{"g": [1], "m": [1], "rel": "partial"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "partial"}]}}
+{"id": "px1541", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px1502", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}]}}
+{"id": "px0647", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2, 3], "rel": "equal"}, {"g": [3], "m": [4, 5, 6], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "partial"}, {"g": [2], "m": [2, 3], "rel": "equal"}, {"g": [3], "m": [4, 5, 6], "rel": "equal"}]}}
+{"id": "px1719", "after": {"pairs": [{"g": [2], "m": [1], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px0194", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}, {"g": [2], "m": [3, 4], "rel": "equal"}, {"g": [3], "m": [5], "rel": "equal"}, {"g": [4], "m": [6], "rel": "equal"}, {"g": [5], "m": [7], "rel": "equal"}]}}
+{"id": "px1635", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}}
+{"id": "px0360", "after": {"pairs": []}}
+{"id": "px0882", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}, {"g": [2], "m": [3], "rel": "equal"}, {"g": [3], "m": [4], "rel": "equal"}, {"g": [4], "m": [5], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}, {"g": [2], "m": [3], "rel": "equal"}, {"g": [3], "m": [4], "rel": "equal"}, {"g": [4], "m": [5], "rel": "equal"}]}}
+{"id": "px1048", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px1303", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}, {"g": [2], "m": [3], "rel": "equal"}]}}
+{"id": "px0044", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}]}}
+{"id": "px0317", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}]}}
+{"id": "px0022", "after": {"pairs": [{"g": [1], "m": [1, 2, 3], "rel": "equal"}, {"g": [2], "m": [4], "rel": "equal"}, {"g": [3], "m": [5], "rel": "equal"}, {"g": [4], "m": [6], "rel": "equal"}, {"g": [5], "m": [7], "rel": "equal"}, {"g": [6], "m": [8], "rel": "equal"}, {"g": [7], "m": [9], "rel": "equal"}, {"g": [8], "m": [10], "rel": "equal"}]}}
+{"id": "px1209", "after": {"pairs": [{"g": [1], "m": [1], "rel": "partial"}]}}
+{"id": "px1431", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}}
+{"id": "px0067", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [8], "rel": "equal"}, {"g": [3], "m": [2], "rel": "equal"}, {"g": [4], "m": [3], "rel": "equal"}, {"g": [5], "m": [4], "rel": "equal"}, {"g": [6], "m": [5], "rel": "equal"}, {"g": [7], "m": [6], "rel": "equal"}, {"g": [8], "m": [7], "rel": "equal"}]}}
+{"id": "px0809", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px0087", "after": {"pairs": [{"g": [2], "m": [1], "rel": "equal"}]}}
+{"id": "px0246", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3, 4, 5, 6], "m": [3], "rel": "equal"}, {"g": [7], "m": [4], "rel": "equal"}, {"g": [8], "m": [5], "rel": "equal"}]}}
+{"id": "px1114", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4, 5], "rel": "equal"}]}}
+{"id": "px1205", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px0500", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}}
+{"id": "px0995", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}, {"g": [5], "m": [5], "rel": "equal"}]}}
+{"id": "px0449", "after": {"pairs": []}, "before": {"pairs": []}}
+{"id": "px1617", "after": {"pairs": [{"g": [1], "m": [1, 6], "rel": "equal"}, {"g": [2], "m": [4], "rel": "equal"}, {"g": [3], "m": [2], "rel": "equal"}, {"g": [4], "m": [3], "rel": "equal"}, {"g": [5], "m": [5], "rel": "equal"}, {"g": [6], "m": [7], "rel": "equal"}]}}
+{"id": "px0758", "after": {"pairs": [{"g": [1], "m": [1, 2, 3, 6], "rel": "equal"}, {"g": [2], "m": [4], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1, 2, 3], "rel": "equal"}, {"g": [2], "m": [4], "rel": "equal"}]}}
+{"id": "px0808", "after": {"pairs": [{"g": [1], "m": [3], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [4], "rel": "equal"}, {"g": [4], "m": [5], "rel": "equal"}]}}
+{"id": "px1721", "after": {"pairs": []}}
+{"id": "px0122", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}]}}
+{"id": "px1476", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2, 3, 4], "rel": "equal"}]}}
+{"id": "px0611", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px0964", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px0842", "after": {"pairs": []}}
+{"id": "px0909", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2, 3], "m": [2], "rel": "equal"}]}}
+{"id": "px1166", "after": {"pairs": []}}
+{"id": "px0526", "after": {"pairs": [{"g": [1], "m": [1, 3, 4], "rel": "partial"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [5], "rel": "equal"}]}}
+{"id": "px0835", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px0998", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4, 5, 6], "rel": "equal"}]}}
+{"id": "px0306", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px0438", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}]}}
+{"id": "px0804", "after": {"pairs": [{"g": [1], "m": [1, 3], "rel": "equal"}, {"g": [2], "m": [2], "rel": "partial"}, {"g": [3], "m": [4], "rel": "equal"}, {"g": [4], "m": [5], "rel": "partial"}, {"g": [5], "m": [6], "rel": "equal"}]}}
+{"id": "px0643", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}]}}
+{"id": "px0661", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}, {"g": [2], "m": [4], "rel": "equal"}, {"g": [3], "m": [5], "rel": "equal"}, {"g": [4], "m": [6], "rel": "equal"}, {"g": [5], "m": [7], "rel": "equal"}, {"g": [6], "m": [8], "rel": "equal"}, {"g": [7], "m": [9], "rel": "equal"}, {"g": [8], "m": [10], "rel": "equal"}, {"g": [9], "m": [11], "rel": "equal"}]}}
+{"id": "px0586", "after": {"pairs": [{"g": [1], "m": [1, 3], "rel": "equal"}, {"g": [2], "m": [4], "rel": "equal"}, {"g": [3], "m": [5], "rel": "equal"}]}, "before": {"pairs": [{"g": [1, 2, 3], "m": [1], "rel": "equal"}]}}
+{"id": "px1390", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2, 3, 4], "rel": "equal"}]}}
+{"id": "px1047", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px1147", "after": {"pairs": [{"g": [1], "m": [1, 5], "rel": "equal"}, {"g": [2], "m": [2, 3], "rel": "equal"}, {"g": [3], "m": [4], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2, 3], "rel": "equal"}, {"g": [3], "m": [4], "rel": "equal"}]}}
+{"id": "px0780", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px0343", "after": {"pairs": []}}
+{"id": "px0042", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}]}}
+{"id": "px1121", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}, {"g": [5], "m": [5], "rel": "equal"}, {"g": [6], "m": [6], "rel": "equal"}, {"g": [7], "m": [7], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}, {"g": [5], "m": [5], "rel": "equal"}, {"g": [6], "m": [6], "rel": "equal"}]}}
+{"id": "px1150", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}}
+{"id": "px0730", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}, {"g": [5], "m": [5], "rel": "equal"}, {"g": [6], "m": [6, 7], "rel": "equal"}, {"g": [7], "m": [8], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}, {"g": [5], "m": [5], "rel": "equal"}, {"g": [6], "m": [6, 7], "rel": "equal"}, {"g": [7], "m": [8], "rel": "equal"}]}}
+{"id": "px0901", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2, 3], "m": [2], "rel": "equal"}]}}
+{"id": "px0976", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px0028", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [4], "rel": "equal"}, {"g": [3], "m": [2], "rel": "equal"}, {"g": [4], "m": [3], "rel": "equal"}]}}
+{"id": "px0687", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}, {"g": [2], "m": [3], "rel": "equal"}, {"g": [3], "m": [4], "rel": "equal"}, {"g": [4], "m": [5, 6], "rel": "equal"}, {"g": [5], "m": [7, 8, 9], "rel": "equal"}, {"g": [6], "m": [12], "rel": "equal"}, {"g": [7], "m": [10, 11], "rel": "partial"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4, 5], "rel": "equal"}, {"g": [5], "m": [6, 7, 8], "rel": "equal"}, {"g": [6], "m": [9, 11], "rel": "equal"}, {"g": [7], "m": [10], "rel": "equal"}]}}
+{"id": "px0869", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2, 3], "m": [2], "rel": "equal"}]}}
+{"id": "px1298", "after": {"pairs": [{"g": [1], "m": [1, 5], "rel": "equal"}, {"g": [2], "m": [9], "rel": "equal"}, {"g": [3], "m": [6, 7, 8], "rel": "equal"}, {"g": [4], "m": [10, 11, 12], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1, 5], "rel": "equal"}, {"g": [2], "m": [9], "rel": "equal"}, {"g": [3], "m": [6, 7, 8], "rel": "equal"}]}}
+{"id": "px0075", "after": {"pairs": []}}
+{"id": "px0062", "after": {"pairs": []}}
+{"id": "px1263", "after": {"pairs": [{"g": [1], "m": [1, 3], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px1616", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4, 5], "m": [4], "rel": "equal"}]}}
+{"id": "px0774", "after": {"pairs": []}, "before": {"pairs": []}}
+{"id": "px1372", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}}
+{"id": "px1095", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}, {"g": [2], "m": [3], "rel": "equal"}]}}
+{"id": "px0987", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px1474", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}]}}
+{"id": "px0321", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1, 4], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px1773", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}}
+{"id": "px1718", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}}
+{"id": "px1039", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px0036", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "partial"}, {"g": [4], "m": [4], "rel": "partial"}, {"g": [5], "m": [5], "rel": "equal"}]}}
+{"id": "px1169", "after": {"pairs": []}}
+{"id": "px0532", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2, 3, 4], "rel": "equal"}, {"g": [3], "m": [5], "rel": "equal"}, {"g": [4], "m": [6], "rel": "equal"}, {"g": [5], "m": [7], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [3, 4], "rel": "equal"}, {"g": [3, 4, 5], "m": [2], "rel": "equal"}]}}
+{"id": "px0910", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}, {"g": [2], "m": [3], "rel": "equal"}, {"g": [3], "m": [4], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [3], "rel": "equal"}, {"g": [2, 3], "m": [4], "rel": "equal"}]}}
+{"id": "px0448", "after": {"pairs": []}}
+{"id": "px0125", "after": {"pairs": [{"g": [1], "m": [1, 2, 3], "rel": "equal"}]}}
+{"id": "px0769", "after": {"pairs": [{"g": [1], "m": [1, 3, 4], "rel": "equal"}]}}
+{"id": "px0219", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px1111", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px0311", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}]}}
+{"id": "px0925", "after": {"pairs": [{"g": [1], "m": [1, 3], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px1042", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px0285", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [6], "rel": "equal"}, {"g": [3], "m": [7], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [5], "rel": "equal"}, {"g": [3], "m": [6], "rel": "equal"}]}}
+{"id": "px0337", "after": {"pairs": [{"g": [1, 2], "m": [1], "rel": "equal"}, {"g": [3], "m": [2], "rel": "equal"}, {"g": [4], "m": [3], "rel": "equal"}, {"g": [5], "m": [4], "rel": "partial"}, {"g": [6], "m": [5, 6], "rel": "equal"}]}}
+{"id": "px0039", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}]}}
+{"id": "px1259", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}]}}
+{"id": "px0883", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}, {"g": [2], "m": [3], "rel": "equal"}, {"g": [3], "m": [4], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}, {"g": [2, 3], "m": [3], "rel": "equal"}]}}
+{"id": "px0973", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px1242", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3, 4, 5], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3, 4, 5], "rel": "equal"}]}}
+{"id": "px0982", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px1693", "after": {"pairs": []}}
+{"id": "px0427", "after": {"pairs": []}}
+{"id": "px1193", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px1552", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px1593", "after": {"pairs": [{"g": [1], "m": [1], "rel": "partial"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}, {"g": [5], "m": [5], "rel": "equal"}, {"g": [6], "m": [6, 7], "rel": "equal"}, {"g": [7], "m": [8, 9], "rel": "equal"}, {"g": [8], "m": [10], "rel": "equal"}, {"g": [9], "m": [11], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "partial"}]}}
+{"id": "px0231", "after": {"pairs": [{"g": [1], "m": [2], "rel": "partial"}, {"g": [2], "m": [1], "rel": "partial"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}, {"g": [5], "m": [5], "rel": "equal"}, {"g": [6], "m": [6], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [2], "rel": "equal"}, {"g": [2], "m": [1], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}, {"g": [5], "m": [5], "rel": "equal"}, {"g": [6], "m": [6], "rel": "equal"}]}}
+{"id": "px0941", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}}
+{"id": "px1470", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px1587", "after": {"pairs": []}}
+{"id": "px0155", "after": {"pairs": [{"g": [1], "m": [1], "rel": "partial"}, {"g": [2, 3], "m": [2], "rel": "equal"}]}}
+{"id": "px1674", "after": {"pairs": [{"g": [1], "m": [1], "rel": "partial"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3, 4], "rel": "equal"}, {"g": [4], "m": [5], "rel": "equal"}]}}
+{"id": "px0584", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3, 4, 5], "rel": "equal"}]}}
+{"id": "px0739", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2, 3], "m": [2], "rel": "equal"}]}}
+{"id": "px0540", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [8], "rel": "equal"}, {"g": [3], "m": [2, 9, 12], "rel": "equal"}, {"g": [4], "m": [10], "rel": "equal"}, {"g": [5], "m": [3], "rel": "equal"}, {"g": [6], "m": [4], "rel": "partial"}, {"g": [7], "m": [5], "rel": "equal"}, {"g": [8], "m": [6], "rel": "equal"}, {"g": [9], "m": [7, 11], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}, {"g": [5], "m": [5], "rel": "equal"}, {"g": [6], "m": [6], "rel": "partial"}, {"g": [7], "m": [7], "rel": "equal"}, {"g": [8], "m": [8], "rel": "equal"}, {"g": [9], "m": [9, 10], "rel": "equal"}]}}
+{"id": "px1378", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [5], "rel": "equal"}, {"g": [3], "m": [6], "rel": "equal"}, {"g": [4], "m": [7], "rel": "equal"}]}}
+{"id": "px0913", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px1115", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px0210", "after": {"pairs": [{"g": [1], "m": [1, 6], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1, 6], "rel": "equal"}]}}
+{"id": "px0837", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "partial"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px1344", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px1480", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2, 3, 4], "rel": "equal"}]}}
+{"id": "px0104", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "partial"}]}}
+{"id": "px1326", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}, {"g": [2], "m": [3], "rel": "equal"}]}}
+{"id": "px1294", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}]}}
+{"id": "px0666", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [3, 4], "rel": "equal"}, {"g": [3], "m": [5], "rel": "equal"}, {"g": [4, 5, 6], "m": [2], "rel": "equal"}, {"g": [7], "m": [6], "rel": "equal"}]}}
+{"id": "px0679", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [3], "rel": "equal"}, {"g": [3], "m": [4], "rel": "equal"}, {"g": [4], "m": [5, 6], "rel": "equal"}, {"g": [5], "m": [7], "rel": "equal"}, {"g": [6], "m": [8], "rel": "equal"}, {"g": [7], "m": [2, 9], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [3], "rel": "equal"}, {"g": [3], "m": [4], "rel": "equal"}, {"g": [4], "m": [5, 6], "rel": "equal"}, {"g": [5], "m": [7], "rel": "equal"}, {"g": [6], "m": [8], "rel": "equal"}, {"g": [7], "m": [9], "rel": "equal"}]}}
+{"id": "px0260", "after": {"pairs": [{"g": [1], "m": [1, 7], "rel": "equal"}, {"g": [2], "m": [8], "rel": "equal"}, {"g": [3], "m": [9, 10, 11], "rel": "equal"}, {"g": [4], "m": [15], "rel": "equal"}, {"g": [5], "m": [12, 13], "rel": "equal"}, {"g": [6], "m": [14], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [7], "rel": "equal"}, {"g": [3], "m": [5, 6, 8, 9, 10], "rel": "equal"}, {"g": [4], "m": [14], "rel": "equal"}, {"g": [5], "m": [11, 12], "rel": "equal"}, {"g": [6], "m": [13], "rel": "equal"}]}}
+{"id": "px1398", "after": {"pairs": [{"g": [2], "m": [1], "rel": "equal"}, {"g": [3], "m": [2], "rel": "equal"}, {"g": [4], "m": [3], "rel": "equal"}]}}
+{"id": "px0753", "after": {"pairs": [{"g": [1], "m": [1, 3], "rel": "equal"}, {"g": [2], "m": [4], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1, 3], "rel": "equal"}, {"g": [2], "m": [4], "rel": "equal"}]}}
+{"id": "px0612", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px0692", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [4], "rel": "equal"}, {"g": [4], "m": [5], "rel": "equal"}, {"g": [5], "m": [6], "rel": "equal"}, {"g": [6], "m": [7, 8], "rel": "equal"}, {"g": [7], "m": [9], "rel": "equal"}, {"g": [8], "m": [10], "rel": "equal"}, {"g": [9], "m": [11], "rel": "equal"}, {"g": [10], "m": [12], "rel": "equal"}]}}
+{"id": "px1446", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2, 3], "rel": "equal"}, {"g": [3], "m": [4], "rel": "equal"}, {"g": [4], "m": [5], "rel": "partial"}, {"g": [5], "m": [6, 7], "rel": "equal"}]}}
+{"id": "px0908", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2, 3], "m": [2], "rel": "equal"}]}}
+{"id": "px1395", "after": {"pairs": [{"g": [1], "m": [1], "rel": "partial"}, {"g": [2], "m": [2, 3], "rel": "equal"}]}}
+{"id": "px1136", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}]}}
+{"id": "px0793", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}, {"g": [5], "m": [5], "rel": "equal"}, {"g": [6], "m": [6], "rel": "equal"}]}}
+{"id": "px1563", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [3], "rel": "equal"}, {"g": [3], "m": [4], "rel": "equal"}, {"g": [4], "m": [2], "rel": "equal"}, {"g": [5], "m": [5], "rel": "partial"}]}}
+{"id": "px1521", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "partial"}]}}
+{"id": "px0871", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2, 3], "m": [2], "rel": "equal"}]}}
+{"id": "px0221", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "partial"}, {"g": [3], "m": [3], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "partial"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px0677", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px1564", "after": {"pairs": [{"g": [1, 2], "m": [1], "rel": "equal"}]}}
+{"id": "px1510", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3, 4, 5], "rel": "equal"}, {"g": [4], "m": [6], "rel": "equal"}]}}
+{"id": "px1690", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px1526", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}, {"g": [5], "m": [5], "rel": "equal"}]}}
+{"id": "px1785", "after": {"pairs": [{"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [1], "rel": "equal"}]}, "before": {"pairs": [{"g": [1, 2], "m": [1], "rel": "equal"}, {"g": [3], "m": [2], "rel": "equal"}]}}
+{"id": "px1244", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}, {"g": [5], "m": [5, 6], "rel": "equal"}, {"g": [6], "m": [7], "rel": "equal"}, {"g": [7], "m": [8], "rel": "equal"}]}}
+{"id": "px1811", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [3], "m": [2], "rel": "equal"}, {"g": [4], "m": [3], "rel": "equal"}, {"g": [5], "m": [4], "rel": "equal"}, {"g": [6], "m": [5], "rel": "equal"}, {"g": [7], "m": [6], "rel": "equal"}, {"g": [8], "m": [7], "rel": "equal"}, {"g": [9], "m": [8], "rel": "equal"}, {"g": [10], "m": [9], "rel": "equal"}]}}
+{"id": "px1475", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [4], "rel": "equal"}, {"g": [3], "m": [2], "rel": "equal"}, {"g": [4], "m": [3, 5, 6], "rel": "equal"}]}}
+{"id": "px0891", "after": {"pairs": [{"g": [1, 3], "m": [1], "rel": "equal"}, {"g": [4], "m": [2], "rel": "equal"}]}}
+{"id": "px0870", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2, 3], "m": [2], "rel": "equal"}]}}
+{"id": "px1094", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px1038", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px1396", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3, 4], "rel": "equal"}]}}
+{"id": "px0742", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [3], "rel": "equal"}, {"g": [3], "m": [4], "rel": "equal"}, {"g": [4], "m": [5], "rel": "equal"}, {"g": [5], "m": [2], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}, {"g": [5], "m": [5], "rel": "equal"}]}}
+{"id": "px1233", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px0880", "after": {"pairs": [{"g": [1, 3], "m": [1], "rel": "equal"}, {"g": [4], "m": [2], "rel": "equal"}]}}
+{"id": "px1459", "after": {"pairs": []}}
+{"id": "px1608", "after": {"pairs": []}}
+{"id": "px0604", "after": {"pairs": [{"g": [1], "m": [1, 3], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px1049", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px1738", "after": {"pairs": []}}
+{"id": "px0274", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}}
+{"id": "px1088", "after": {"pairs": [{"g": [1], "m": [1], "rel": "partial"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px0239", "after": {"pairs": [{"g": [1], "m": [1, 5], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "partial"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}]}}
+{"id": "px1561", "after": {"pairs": [{"g": [1], "m": [1], "rel": "partial"}, {"g": [2], "m": [2], "rel": "partial"}]}}
+{"id": "px1079", "after": {"pairs": [{"g": [1], "m": [1], "rel": "partial"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}]}}
+{"id": "px1271", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px1611", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}]}}
+{"id": "px1397", "after": {"pairs": [{"g": [2], "m": [1, 4], "rel": "equal"}, {"g": [3], "m": [2], "rel": "equal"}, {"g": [4], "m": [3], "rel": "equal"}, {"g": [5], "m": [5], "rel": "equal"}]}}
+{"id": "px1197", "after": {"pairs": [{"g": [1], "m": [1], "rel": "partial"}]}}
+{"id": "px1457", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px1512", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [4], "rel": "equal"}, {"g": [3], "m": [2, 6], "rel": "equal"}, {"g": [4], "m": [3, 7], "rel": "equal"}, {"g": [5], "m": [9], "rel": "equal"}, {"g": [6], "m": [8], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [4], "rel": "equal"}, {"g": [3], "m": [2, 6], "rel": "equal"}, {"g": [4], "m": [3, 7], "rel": "equal"}, {"g": [6], "m": [8], "rel": "equal"}]}}
+{"id": "px1683", "after": {"pairs": [{"g": [1], "m": [1, 2, 3], "rel": "equal"}]}}
+{"id": "px1527", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}, {"g": [2], "m": [3], "rel": "equal"}, {"g": [3], "m": [4], "rel": "equal"}, {"g": [4], "m": [5], "rel": "equal"}]}}
+{"id": "px1221", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}}
+{"id": "px0384", "after": {"pairs": [{"g": [2], "m": [1], "rel": "equal"}, {"g": [3], "m": [2], "rel": "equal"}, {"g": [4], "m": [3], "rel": "equal"}, {"g": [5], "m": [4], "rel": "equal"}, {"g": [6], "m": [5], "rel": "equal"}]}}
+{"id": "px1361", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}]}}
+{"id": "px0550", "after": {"pairs": [{"g": [1], "m": [1, 3], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [4], "rel": "partial"}]}}

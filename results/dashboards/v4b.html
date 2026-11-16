@@ -1,0 +1,139 @@
+<html><head><meta charset='utf-8'><title>v4b</title><style>
+body{font-family:Segoe UI,Arial,sans-serif;margin:24px;background:#f6f7f9;color:#222}
+h1{font-size:22px} h2{font-size:17px;margin:26px 0 8px;border-bottom:2px solid #dde1e6;padding-bottom:4px}
+table{border-collapse:collapse;background:#fff;margin:6px 0}
+th,td{border:1px solid #dde1e6;padding:5px 10px;font-size:13px;text-align:left}
+th{background:#eef1f4}
+.card{display:inline-block;background:#fff;border:1px solid #dde1e6;border-radius:8px;padding:10px 16px;margin:4px 8px 4px 0;vertical-align:top}
+.card .v{font-size:22px;font-weight:600} .card .l{font-size:12px;color:#667}
+.good{color:#1a7f37}.bad{color:#c0392b}.warn{color:#b26a00}.mut{color:#667}
+pre{background:#fff;border:1px solid #dde1e6;padding:10px;font-size:12px;overflow:auto}
+.bar{height:10px;background:#4f8ef7;border-radius:3px}
+.small{font-size:12px;color:#667}
+</style></head><body>
+<h1>Прогон v4b <span class='small'>2026-11-16 17:58</span></h1>
+<div class='card'><div class='v'>272</div><div class='l'>запросов в метриках</div></div><div class='card'><div class='v'>95.6%</div><div class='l'>точные спаны</div></div><div class='card'><div class='v'>0</div><div class='l'>ошибок стадий</div></div><div class='card'><div class='v'>3.33</div><div class='l'>атомов в среднем</div></div><div class='card'><div class='v'>0.949</div><div class='l'>lenient F1</div></div><div class='card'><div class='v'>0.667</div><div class='l'>strict F1</div></div><div class='card'><div class='v'>76.1%</div><div class='l'>attach acc</div></div><div class='card'><div class='v'>21.1%</div><div class='l'>false-fix судьи на эталоне</div></div>
+<h2>Здоровье пайплайна</h2><table>
+<tr><th>метрика</th><th>v4b</th><th>v4a</th><th>Δ</th></tr>
+<tr><td>ошибки стадий</td><td>0</td><td>4</td><td><span class="good">-4</span></td></tr>
+<tr><td>точные спаны</td><td>260</td><td>255</td><td><span class="good">+5</span></td></tr>
+<tr><td>непокрытые куски</td><td>61</td><td>60</td><td><span class="bad">+1</span></td></tr>
+<tr><td>lint (всего запросов)</td><td>2</td><td>1</td><td></td></tr>
+</table>
+<span class='small'>lint: {&quot;maybe_not_atomic&quot;: 2} | s3 переносы: {&quot;атомы&quot;: 431, &quot;background&quot;: 8, &quot;role&quot;: 2} | s4 классы: {&quot;task&quot;: 609, &quot;format&quot;: 20, &quot;not_constraint&quot;: 1}</span>
+<h2>Сопоставление с эталоном (после фиксера)</h2>
+<table>
+<tr><th>метрика</th><th>P</th><th>R</th><th>F1</th><th>ΔF1 vs v4a</th></tr>
+<tr><td>lenient</td><td>0.937</td><td>0.962</td><td>0.949</td><td><span class="bad">-0.019</span></td></tr>
+<tr><td>strict</td><td>0.609</td><td>0.737</td><td>0.667</td><td><span class="good">+0.004</span></td></tr>
+<tr><td>класс T</td><td>1.000</td><td>0.993</td><td>0.996</td><td><span class="good">+0.006</span></td></tr>
+<tr><td>класс TC</td><td>0.908</td><td>0.941</td><td>0.925</td><td><span class="bad">-0.032</span></td></tr>
+<tr><td>класс FC</td><td>0.929</td><td>1.000</td><td>0.963</td><td><span class="bad">-0.037</span></td></tr>
+<tr><td>ci95 lenient</td><td>—</td><td></td><td></td><td></td></tr>
+<tr><td>ci95 strict</td><td>—</td><td></td><td></td><td></td></tr>
+</table>
+<h2>Пары и привязка</h2><table>
+<tr><th>тип</th><th>v4b</th><th>v4a</th><th>Δ</th></tr>
+<tr><td>equal</td><td>269</td><td>496</td><td><span class="bad">-227</span></td></tr>
+<tr><td>partial</td><td>19</td><td>30</td><td><span class="good">-11</span></td></tr>
+<tr><td>over_split</td><td>53</td><td>109</td><td><span class="good">-56</span></td></tr>
+<tr><td>under_split</td><td>5</td><td>11</td><td><span class="good">-6</span></td></tr>
+<tr><td>attach_acc</td><td>76.1%</td><td>70.2%</td><td><span class="good">+0.059</span></td></tr>
+</table>
+<h2>Эффект фиксера (до → после)</h2>
+<table>
+<tr><th>метрика</th><th>до</th><th>после</th><th>Δ</th></tr>
+<tr><td>lenient F1</td><td>0.946</td><td>0.949</td><td><span class="good">+0.003</span></td></tr>
+<tr><td>strict F1</td><td>0.651</td><td>0.667</td><td><span class="good">+0.016</span></td></tr>
+<tr><td>over_split</td><td>55</td><td>53</td><td><span class="good">-2</span></td></tr>
+<tr><td>under_split</td><td>9</td><td>5</td><td><span class="good">-4</span></td></tr>
+</table>
+<span class='small'>фиксер: {&quot;fixed&quot;: 66, &quot;applied&quot;: 84, &quot;rejected&quot;: 5, &quot;error&quot;: 6}</span>
+<h2>Судья</h2>
+<table>
+<tr><th>что</th><th>v4b</th><th>v4a</th><th>Δ</th></tr>
+<tr><td>на прогоне</td><td>{&#x27;ok&#x27;: 193, &#x27;fix&#x27;: 71, &#x27;error&#x27;: 8}</td><td></td><td></td></tr>
+<tr><td>на эталоне (ложные тревоги)</td><td>{&#x27;fix&#x27;: 4, &#x27;ok&#x27;: 15, &#x27;error&#x27;: 236}</td><td></td><td></td></tr>
+<tr><td>false-fix rate (цель <10%)</td><td>21.1%</td><td>32.0%</td><td><span class="good">-0.109</span></td></tr>
+</table>
+<span class='small'>major на эталоне: {&quot;bad_norm&quot;: 1, &quot;missing_constraint&quot;: 2, &quot;role&quot;: 1, &quot;span&quot;: 1}</span>
+<h2>Неделимость</h2>
+<table>
+<tr><th>метрика</th><th>v4b</th><th>v4a</th><th>Δ</th></tr>
+<tr><td>precision (цель >0.7)</td><td>0.40</td><td>0.37</td><td><span class="good">+0.03</span></td></tr>
+<tr><td>recall</td><td>1.00</td><td>0.94</td><td><span class="good">+0.06</span></td></tr>
+<tr><td>confusion (gold×model)</td><td>{&#x27;gold_yes_model_yes&#x27;: 17, &#x27;gold_yes_model_no&#x27;: 0, &#x27;gold_no_model_yes&#x27;: 25, &#x27;gold_no_model_no&#x27;: 230}</td><td></td><td></td></tr>
+</table>
+<span class='small'>причины модели: {&quot;no_task&quot;: 34, &quot;interdependent&quot;: 7, &quot;entangled&quot;: 1}</span>
+<h2>По типам задач (худшие сверху)</h2><table>
+<tr><th>тип</th><th>атомов эталона</th><th>P</th><th>R</th><th>F1</th></tr>
+<tr><td>Задачи про слова (Редакторский брейншторм)</td><td>8</td><td>1.000</td><td>0.125</td><td>0.222</td></tr>
+<tr><td>Угадать объект по описанию</td><td>9</td><td>1.000</td><td>0.556</td><td>0.714</td></tr>
+<tr><td>Составить план текста</td><td>14</td><td>0.714</td><td>1.000</td><td>0.833</td></tr>
+<tr><td>Анализ текста (объективный анализ)</td><td>13</td><td>0.857</td><td>0.923</td><td>0.889</td></tr>
+<tr><td>Выделить из текста</td><td>15</td><td>0.875</td><td>1.000</td><td>0.933</td></tr>
+<tr><td>Написать код</td><td>47</td><td>0.875</td><td>1.000</td><td>0.933</td></tr>
+<tr><td>Прикладной брейншторминг</td><td>8</td><td>0.875</td><td>1.000</td><td>0.933</td></tr>
+<tr><td>Объяснить концепт</td><td>16</td><td>1.000</td><td>0.875</td><td>0.933</td></tr>
+<tr><td>ИИ как персонаж (бытовая ситуация)</td><td>8</td><td>0.909</td><td>1.000</td><td>0.952</td></tr>
+<tr><td>Изменить код</td><td>23</td><td>0.914</td><td>1.000</td><td>0.955</td></tr>
+<tr><td>Написать инструкцию</td><td>13</td><td>0.952</td><td>1.000</td><td>0.976</td></tr>
+<tr><td>Написать публицистический текст</td><td>16</td><td>0.955</td><td>1.000</td><td>0.977</td></tr>
+<tr><td>Написать научный текст</td><td>20</td><td>0.957</td><td>1.000</td><td>0.978</td></tr>
+<tr><td>Написать официально-деловой текст</td><td>37</td><td>0.977</td><td>1.000</td><td>0.989</td></tr>
+<tr><td>Интерпретация текста (субъективная оценка)</td><td>4</td><td>1.000</td><td>1.000</td><td>1.000</td></tr>
+<tr><td>Оценить текст</td><td>10</td><td>1.000</td><td>1.000</td><td>1.000</td></tr>
+<tr><td>Перефразировать текст</td><td>13</td><td>1.000</td><td>1.000</td><td>1.000</td></tr>
+<tr><td>Логические задачи</td><td>1</td><td>1.000</td><td>1.000</td><td>1.000</td></tr>
+<tr><td>Стайл-трансфер</td><td>10</td><td>1.000</td><td>1.000</td><td>1.000</td></tr>
+<tr><td>Придумать вопрос к тексту</td><td>4</td><td>1.000</td><td>1.000</td><td>1.000</td></tr>
+<tr><td>ИИ как персонаж (экспертная ситуация)</td><td>7</td><td>1.000</td><td>1.000</td><td>1.000</td></tr>
+<tr><td>Написать художественный текст</td><td>13</td><td>1.000</td><td>1.000</td><td>1.000</td></tr>
+<tr><td>Составить план действий</td><td>4</td><td>1.000</td><td>1.000</td><td>1.000</td></tr>
+<tr><td>Суммаризация</td><td>14</td><td>1.000</td><td>1.000</td><td>1.000</td></tr>
+<tr><td>Перевод на русский или английский</td><td>5</td><td>1.000</td><td>1.000</td><td>1.000</td></tr>
+<tr><td>Отредактировать текст</td><td>5</td><td>1.000</td><td>1.000</td><td>1.000</td></tr>
+<tr><td>Творческий брейншторминг</td><td>12</td><td>1.000</td><td>1.000</td><td>1.000</td></tr>
+<tr><td>Информационный поиск</td><td>1</td><td>1.000</td><td>1.000</td><td>1.000</td></tr>
+<tr><td>Дать совет</td><td>6</td><td>1.000</td><td>1.000</td><td>1.000</td></tr>
+<tr><td>Дать рекомендации</td><td>6</td><td>1.000</td><td>1.000</td><td>1.000</td></tr>
+<tr><td>Общий брейншторминг</td><td>3</td><td>1.000</td><td>1.000</td><td>1.000</td></tr>
+</table>
+<h2>Худшие запросы (топ-15)</h2><table>
+<tr><th>id</th><th>запрос</th><th>пропущено</th><th>лишнее</th><th>over</th><th>under</th></tr>
+<tr><td>px0246</td><td>Есть два слова. В первом мы можем увидеть разделительный твёрдый знак между приставкой и корнем, а второе образовано от </td><td><span class='bad'>первое слово с разделительным твёрдым знаком между приставкой и корнем; второе слово образовано от прилагательного; прилагательное-основа женского рода; прилагательное-основа единственного числа; прил</span></td><td><span class='warn'></span></td><td>0</td><td>0</td></tr>
+<tr><td>px0479</td><td>Набросай-ка мне тезисы для вот какой темы. Я тут пишу диссертацию о восприятии лунатизма среди индийцев британскими врач</td><td><span class='bad'></span></td><td><span class='warn'>тезисы по указанной теме; тезисы о восприятии лунатизма; тезисы о восприятии лунатизма в отношении индийцев; тезисы о восприятии лунатизма британскими врачами; тезисы о восприятии лунатизма в период с</span></td><td>0</td><td>0</td></tr>
+<tr><td>px0104</td><td>Видела фильм, в котором английский математик, которого играет Бенедикт Камбербэтч , пытается взломать код машины Enigma,</td><td><span class='bad'>фильм, где английского математика играет Бенедикт Камбербэтч; фильм о взломе кода машины Enigma немецких войск; математик работает с командой; фильм, где в команде есть женщина (Кира Найтли)</span></td><td><span class='warn'></span></td><td>0</td><td>0</td></tr>
+<tr><td>px0285</td><td>Задача: Требуется найти вторую по величине зарплату в таблице employees с полями имя работника employee_name, зарплата s</td><td><span class='bad'></span></td><td><span class='warn'>таблица employees; поле employee_name — имя работника; поле salary — зарплата</span></td><td>0</td><td>0</td></tr>
+<tr><td>px0260</td><td>Есть поле размером m х n. Пустые ячейки в этом поле обозначены символом &#x27;x&#x27;. В этом лесу растут деревья обозначенные сим</td><td><span class='bad'></span></td><td><span class='warn'>поле размером m х n; пустые ячейки поля обозначены символом &#x27;x&#x27;; деревья в поле обозначены символом &#x27;T&#x27;</span></td><td>2</td><td>0</td></tr>
+<tr><td>px0091</td><td>В таблице checks есть поля:
+
+Дата чека - date
+Номер чека - id_check
+Тип операции возврат или приход - type
+Сумма чека - </td><td><span class='bad'></span></td><td><span class='warn'>значение amount включает налог; ставка налога 18%</span></td><td>0</td><td>0</td></tr>
+<tr><td>px0458</td><td>Можешь помочь придумать мне заголовок и названия глав для курсовой работы по теме репрезентация партизан ВОВ в советском</td><td><span class='bad'></span></td><td><span class='warn'>заголовок курсовой работы о репрезентации партизан ВОВ в советском балете через танцевальный перформанс; названия глав курсовой работы о репрезентации партизан ВОВ в советском балете через танцевальны</span></td><td>1</td><td>0</td></tr>
+<tr><td>px0055</td><td>А объясни пж, почему ВПШ было так популярно, если оскорбляло людей и публиковало про них сплошные фейки?</td><td><span class='bad'>объяснение с учётом того, что ВПШ оскорбляло людей; объяснение с учётом того, что ВПШ публиковало фейки</span></td><td><span class='warn'></span></td><td>0</td><td>0</td></tr>
+<tr><td>px1385</td><td>Проанализируй данный фрагмент научно-популярной статьи и опиши суть проблемы, рассмотренной автором: 
+
+Сейчас довольно с</td><td><span class='bad'></span></td><td><span class='warn'>суть проблемы, рассмотренной автором</span></td><td>0</td><td>1</td></tr>
+<tr><td>px0162</td><td>Выпиши из этого стихотворения все средства художественной выразительности и назови их:
+Гляди, как солнце
+Ватник облаков </td><td><span class='bad'></span></td><td><span class='warn'>средства художественной выразительности из стихотворения</span></td><td>0</td><td>1</td></tr>
+<tr><td>px0537</td><td>Напиши интервью со знаменитым тарологом, в котором он должен дать прогноз на мировые события в будущем году в различных </td><td><span class='bad'></span></td><td><span class='warn'>прогноз в различных сферах</span></td><td>2</td><td>0</td></tr>
+<tr><td>px1391</td><td>Проанализируй связь между обезлесиванием и изменением состава атмосферы на основе данного фрагмента монографии: 
+
+Вырубк</td><td><span class='bad'></span></td><td><span class='warn'>анализ связи между обезлесиванием и изменением состава атмосферы на основе данного фрагмента монографии</span></td><td>0</td><td>0</td></tr>
+<tr><td>px0758</td><td>Ниже представлен код на языке JavaScript. Необходимо изменить его согласно условию задачи.
+
+Код:
+
+function cleanArray(ar</td><td><span class='bad'></span></td><td><span class='warn'>код на языке JavaScript</span></td><td>1</td><td>0</td></tr>
+<tr><td>px0661</td><td>Напиши текст информационного сообщения об объявлении конкурса на иллюстрацию художественной книги. Определи сроки провед</td><td><span class='bad'></span></td><td><span class='warn'>информационное сообщение со сроками проведения конкурса</span></td><td>1</td><td>0</td></tr>
+<tr><td>px0769</td><td>Ниже представлен код на языке JavaScript. Необходимо изменить его согласно условию задачи.
+
+Код:
+
+function roundNumber(n</td><td><span class='bad'></span></td><td><span class='warn'>код на языке JavaScript</span></td><td>1</td><td>0</td></tr>
+</table>
+</body></html>

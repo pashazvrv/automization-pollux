@@ -1,0 +1,11 @@
+ПРИМЕР.
+Промпт: Будь другом, напиши мне подробный план текста.
+Разбор: {"tasks":[{"id":"t1","frags":["напиши мне подробный план текста"],"norm":"Напиши мне подробный план текста"}],"task_constraints":[],"format_constraints":[],"context":{"data":[],"background":[],"role":[]}}
+Замечания судьи: [{"severity":"major","rule":"п.1(д)","type":"span","target":"подробный","note":"Оценочное слово — ограничение задачи."},{"severity":"major","rule":"форма записи","type":"bad_norm","target":"Напиши мне подробный план текста","note":"Нужен инфинитив без «мне»."}]
+Ответ: {"fixed":true,"parse":{"tasks":[{"id":"t1","frags":["напиши мне","план текста"],"norm":"Написать план текста"}],"task_constraints":[{"norm":"подробный план","src":["подробный"],"attach":["t1"]}],"format_constraints":[],"context":{"data":[],"background":[],"role":[]}},"applied":["span: «подробный» вынесено в ограничения","bad_norm: norm переписан в инфинитив"],"rejected":[],"indivisible":false,"reason":null,"evidence":"","note":"Обычная просьба с одним ограничением."}
+
+ПРИМЕР.
+Промпт: Как укоротить брюки самой?
+Разбор: {"tasks":[{"id":"t1","frags":[],"norm":"Объяснить, как самостоятельно укоротить брюки"}],"task_constraints":[],"format_constraints":[],"context":{"data":[],"background":[],"role":[]}}
+Замечания судьи: []
+Ответ: {"fixed":false,"parse":null,"applied":[],"rejected":[],"indivisible":true,"reason":"no_task","evidence":"","note":"Неявная задача: Объяснить, как самостоятельно укоротить брюки."}

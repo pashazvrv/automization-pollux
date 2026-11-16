@@ -4,3 +4,9 @@ __pycache__/
 data/raw/
 results/*.jsonl
 .venv/
+
+# базовые прогоны-референсы (нужны для регрессии G1 и дашбордов)
+!results/v4a_*.jsonl
+!results/v4b_*.jsonl
+results_bundle.tar.gz
+pollux_v5.tar.gz

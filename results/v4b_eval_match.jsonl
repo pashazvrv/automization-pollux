@@ -1,0 +1,300 @@
+{"id": "px0933", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}, "before": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1217", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0174", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0169", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px0140", "after": {"pairs": [{"g": [1], "m": [3], "rel": "partial"}, {"g": [2], "m": [1], "rel": "partial"}, {"g": [3], "m": [2], "rel": "equal"}]}, "before": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1385", "after": {"pairs": [{"g": [1, 2], "m": [1], "rel": "equal"}]}}
+{"id": "px0725", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}, "before": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1432", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}}
+{"id": "px1800", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}, {"g": [5], "m": [5], "rel": "equal"}, {"g": [6], "m": [6], "rel": "equal"}, {"g": [7], "m": [7], "rel": "equal"}]}}
+{"id": "px1154", "after": {"pairs": []}}
+{"id": "px0124", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}}
+{"id": "px0217", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px1007", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0904", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px0423", "after": {"pairs": []}}
+{"id": "px0117", "after": {"pairs": []}}
+{"id": "px1030", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0216", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px0157", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1060", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}]}}
+{"id": "px1027", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px1266", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0602", "after": {"pairs": [{"g": [1, 3], "m": [1], "rel": "equal"}]}, "before": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0860", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}}
+{"id": "px0980", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px0281", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [6], "rel": "equal"}]}}
+{"id": "px0162", "after": {"pairs": [{"g": [1, 2], "m": [1], "rel": "equal"}]}}
+{"id": "px0182", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2, 3], "rel": "equal"}, {"g": [3], "m": [4], "rel": "equal"}, {"g": [4], "m": [5], "rel": "equal"}]}}
+{"id": "px0565", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px0289", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1273", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}]}}
+{"id": "px0387", "after": {"pairs": []}}
+{"id": "px0132", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1680", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [3], "rel": "equal"}, {"g": [3], "m": [4], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2, 3], "rel": "equal"}, {"g": [3], "m": [4], "rel": "equal"}]}}
+{"id": "px1231", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}]}}
+{"id": "px1382", "after": {"pairs": []}}
+{"id": "px0553", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1646", "after": {"pairs": []}}
+{"id": "px0089", "after": {"pairs": []}, "before": {"pairs": []}}
+{"id": "px0374", "after": {"pairs": []}, "before": {"pairs": []}}
+{"id": "px1589", "after": {"pairs": []}}
+{"id": "px0240", "after": {"pairs": []}}
+{"id": "px0159", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}]}}
+{"id": "px0111", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1286", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}, {"g": [5], "m": [5], "rel": "equal"}, {"g": [6], "m": [6], "rel": "equal"}]}}
+{"id": "px1253", "after": {"pairs": [{"g": [1], "m": [1, 3], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1, 3], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px0537", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}, {"g": [2], "m": [3, 4, 5], "rel": "equal"}, {"g": [3], "m": [7], "rel": "equal"}, {"g": [4], "m": [8], "rel": "equal"}, {"g": [5], "m": [9], "rel": "equal"}, {"g": [6], "m": [10], "rel": "equal"}, {"g": [7], "m": [11], "rel": "equal"}]}}
+{"id": "px0740", "after": {"pairs": []}}
+{"id": "px0978", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px1573", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}}
+{"id": "px1601", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1545", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2, 3], "rel": "equal"}, {"g": [3], "m": [4], "rel": "equal"}]}}
+{"id": "px1104", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1549", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px1534", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "partial"}, {"g": [4], "m": [4, 5], "rel": "partial"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "partial"}]}}
+{"id": "px0571", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px1052", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0323", "after": {"pairs": [{"g": [1], "m": [1], "rel": "partial"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px0220", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1280", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}, {"g": [2], "m": [3], "rel": "equal"}]}}
+{"id": "px0091", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}, {"g": [5], "m": [5], "rel": "equal"}, {"g": [6], "m": [6], "rel": "equal"}, {"g": [7], "m": [7], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}, {"g": [5], "m": [5], "rel": "equal"}, {"g": [6], "m": [6], "rel": "equal"}, {"g": [7], "m": [7], "rel": "equal"}]}}
+{"id": "px0919", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}}
+{"id": "px0307", "after": {"pairs": [{"g": [1], "m": [1, 2, 3], "rel": "equal"}]}, "before": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1110", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0013", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1230", "after": {"pairs": [{"g": [1], "m": [1], "rel": "partial"}]}}
+{"id": "px1201", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "partial"}, {"g": [4], "m": [4], "rel": "partial"}, {"g": [5], "m": [5], "rel": "equal"}]}}
+{"id": "px0454", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1194", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0579", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}}
+{"id": "px1350", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0442", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1232", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}, "before": {"pairs": [{"g": [1, 2], "m": [1], "rel": "equal"}, {"g": [3], "m": [6], "rel": "equal"}]}}
+{"id": "px1578", "after": {"pairs": []}, "before": {"pairs": []}}
+{"id": "px1667", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}}
+{"id": "px1540", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px1500", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}]}}
+{"id": "px0458", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}]}, "before": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1624", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0992", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0295", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px0040", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}]}}
+{"id": "px0595", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px1783", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0556", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px1145", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}]}}
+{"id": "px1803", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1661", "after": {"pairs": []}, "before": {"pairs": []}}
+{"id": "px0202", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0863", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0147", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}]}}
+{"id": "px0293", "after": {"pairs": []}}
+{"id": "px1018", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0697", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [7], "rel": "equal"}, {"g": [5], "m": [8], "rel": "equal"}, {"g": [6], "m": [6], "rel": "equal"}, {"g": [7], "m": [4], "rel": "equal"}, {"g": [8], "m": [5], "rel": "equal"}]}, "before": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1577", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1391", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}}
+{"id": "px0897", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px0055", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px0652", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2, 3], "rel": "equal"}, {"g": [3], "m": [4], "rel": "equal"}]}}
+{"id": "px1206", "after": {"pairs": [{"g": [1], "m": [1, 3], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [4, 5, 6, 7], "rel": "equal"}]}}
+{"id": "px0506", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [3], "rel": "equal"}, {"g": [3], "m": [2], "rel": "equal"}]}, "before": {"pairs": [{"g": [1, 3], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px0450", "after": {"pairs": [{"g": [1], "m": [1, 3], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [4], "rel": "equal"}]}}
+{"id": "px1791", "after": {"pairs": []}, "before": {"pairs": []}}
+{"id": "px0846", "after": {"pairs": []}}
+{"id": "px0889", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1314", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0616", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [12], "rel": "equal"}]}, "before": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0518", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2, 3], "rel": "equal"}, {"g": [3], "m": [4, 5], "rel": "equal"}]}}
+{"id": "px1424", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px0929", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px1063", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px0479", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}}
+{"id": "px1648", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}, {"g": [2], "m": [4], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}, {"g": [2], "m": [4], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px1058", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1317", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}}
+{"id": "px1560", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}, {"g": [5], "m": [5], "rel": "equal"}, {"g": [6], "m": [6, 7], "rel": "equal"}, {"g": [7], "m": [8], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}, {"g": [5], "m": [5], "rel": "equal"}, {"g": [6], "m": [6, 7], "rel": "equal"}, {"g": [7], "m": [8], "rel": "equal"}]}}
+{"id": "px0060", "after": {"pairs": []}, "before": {"pairs": []}}
+{"id": "px0656", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}, "before": {"pairs": [{"g": [1], "m": [1, 3, 4], "rel": "equal"}, {"g": [2], "m": [5], "rel": "equal"}, {"g": [3], "m": [6], "rel": "equal"}, {"g": [4], "m": [2, 7, 8], "rel": "equal"}, {"g": [5], "m": [9, 10], "rel": "equal"}]}}
+{"id": "px1579", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1143", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1569", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1127", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}, {"g": [2], "m": [3], "rel": "equal"}, {"g": [3], "m": [4], "rel": "equal"}, {"g": [4], "m": [5], "rel": "equal"}, {"g": [5], "m": [6], "rel": "equal"}]}}
+{"id": "px0670", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}]}}
+{"id": "px0006", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "partial"}, {"g": [2], "m": [5], "rel": "equal"}, {"g": [3], "m": [3, 4], "rel": "equal"}]}}
+{"id": "px0027", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px1399", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0902", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}]}}
+{"id": "px1565", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1478", "after": {"pairs": [{"g": [1], "m": [1], "rel": "partial"}, {"g": [2], "m": [2], "rel": "partial"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px1541", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1502", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0647", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1719", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0194", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}, {"g": [2], "m": [3, 4], "rel": "equal"}, {"g": [3], "m": [6], "rel": "equal"}, {"g": [4], "m": [5], "rel": "equal"}, {"g": [5], "m": [7], "rel": "equal"}]}}
+{"id": "px1635", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0360", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0882", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}, "before": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1048", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1303", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}, {"g": [2], "m": [3], "rel": "equal"}]}}
+{"id": "px0044", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0317", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0022", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1209", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}, "before": {"pairs": [{"g": [1], "m": [2], "rel": "partial"}, {"g": [2], "m": [1], "rel": "partial"}]}}
+{"id": "px1431", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}}
+{"id": "px0067", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0809", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px0087", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0246", "after": {"pairs": [{"g": [1], "m": [1], "rel": "partial"}]}}
+{"id": "px1114", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1205", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px0500", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0995", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0449", "after": {"pairs": []}, "before": {"pairs": []}}
+{"id": "px1617", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}, "before": {"pairs": [{"g": [1], "m": [1, 6], "rel": "equal"}, {"g": [2], "m": [4], "rel": "equal"}, {"g": [3], "m": [2], "rel": "equal"}, {"g": [4], "m": [3], "rel": "equal"}, {"g": [5], "m": [5], "rel": "equal"}, {"g": [6], "m": [7], "rel": "equal"}]}}
+{"id": "px0758", "after": {"pairs": [{"g": [1], "m": [1, 3, 4, 5, 7], "rel": "equal"}, {"g": [2], "m": [6], "rel": "equal"}]}, "before": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0808", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1721", "after": {"pairs": []}}
+{"id": "px0122", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}}
+{"id": "px1476", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0611", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0964", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0842", "after": {"pairs": []}}
+{"id": "px0909", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}, "before": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1166", "after": {"pairs": []}}
+{"id": "px0526", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0550", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0835", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0998", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4, 5, 6], "rel": "equal"}]}}
+{"id": "px0306", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}, "before": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0438", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0804", "after": {"pairs": [{"g": [1], "m": [1, 3], "rel": "equal"}, {"g": [2], "m": [2], "rel": "partial"}, {"g": [3], "m": [4], "rel": "equal"}, {"g": [4], "m": [5], "rel": "partial"}, {"g": [5], "m": [6], "rel": "equal"}]}, "before": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0643", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}]}}
+{"id": "px0661", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}, {"g": [2], "m": [4], "rel": "equal"}, {"g": [3], "m": [5], "rel": "equal"}, {"g": [4], "m": [6], "rel": "equal"}, {"g": [5], "m": [7], "rel": "equal"}, {"g": [6], "m": [8], "rel": "equal"}, {"g": [7], "m": [9], "rel": "equal"}, {"g": [8], "m": [10], "rel": "equal"}, {"g": [9], "m": [11], "rel": "equal"}]}}
+{"id": "px0586", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}, "before": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1390", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1047", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px1147", "after": {"pairs": [{"g": [1], "m": [1, 3], "rel": "equal"}, {"g": [2, 3], "m": [2], "rel": "equal"}]}, "before": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0780", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px0343", "after": {"pairs": []}}
+{"id": "px0042", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "partial"}]}}
+{"id": "px1121", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}, {"g": [5], "m": [5], "rel": "equal"}, {"g": [6], "m": [6], "rel": "equal"}, {"g": [7], "m": [7], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}, {"g": [5], "m": [5], "rel": "equal"}, {"g": [6], "m": [6], "rel": "equal"}]}}
+{"id": "px1150", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}}
+{"id": "px0730", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}, {"g": [5], "m": [5], "rel": "equal"}, {"g": [6], "m": [6, 7], "rel": "equal"}, {"g": [7], "m": [8], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}, {"g": [5], "m": [5], "rel": "equal"}, {"g": [6], "m": [6, 7], "rel": "equal"}, {"g": [7], "m": [8], "rel": "equal"}]}}
+{"id": "px0901", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}, "before": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0976", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px0028", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2, 5], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}]}}
+{"id": "px0687", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}, {"g": [5], "m": [5], "rel": "equal"}, {"g": [6], "m": [6, 8], "rel": "equal"}, {"g": [7], "m": [7], "rel": "equal"}]}}
+{"id": "px0869", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2, 3], "m": [2], "rel": "equal"}]}}
+{"id": "px1298", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}, "before": {"pairs": [{"g": [1], "m": [1, 5], "rel": "equal"}, {"g": [2], "m": [9], "rel": "equal"}, {"g": [3], "m": [6, 7, 8], "rel": "equal"}, {"g": [4], "m": [10, 11, 12], "rel": "equal"}]}}
+{"id": "px0075", "after": {"pairs": []}}
+{"id": "px0062", "after": {"pairs": []}}
+{"id": "px1263", "after": {"pairs": [{"g": [1], "m": [1, 3], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px1616", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}, "before": {"pairs": [{"g": [1], "m": [1, 5], "rel": "equal"}, {"g": [2], "m": [2, 6], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4, 5], "m": [4], "rel": "equal"}]}}
+{"id": "px0774", "after": {"pairs": []}, "before": {"pairs": []}}
+{"id": "px1372", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1095", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0987", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1474", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0321", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px1773", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}]}, "before": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1718", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}}
+{"id": "px1039", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px0036", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "partial"}, {"g": [4], "m": [4], "rel": "partial"}, {"g": [5], "m": [5], "rel": "equal"}]}}
+{"id": "px1169", "after": {"pairs": []}}
+{"id": "px0532", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [5], "rel": "equal"}, {"g": [3], "m": [2], "rel": "equal"}, {"g": [4], "m": [3], "rel": "equal"}, {"g": [5], "m": [4], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [3], "rel": "equal"}, {"g": [3, 4, 5], "m": [2], "rel": "equal"}]}}
+{"id": "px0910", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}, {"g": [2], "m": [3], "rel": "equal"}, {"g": [3], "m": [4], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}, {"g": [2, 3], "m": [3], "rel": "equal"}]}}
+{"id": "px0448", "after": {"pairs": []}, "before": {"pairs": []}}
+{"id": "px0125", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0769", "after": {"pairs": [{"g": [1], "m": [1, 3, 4], "rel": "equal"}]}, "before": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0219", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px1111", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0311", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}]}}
+{"id": "px0925", "after": {"pairs": [{"g": [1], "m": [1, 3], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px1042", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0285", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [5], "rel": "equal"}, {"g": [3], "m": [6], "rel": "equal"}]}}
+{"id": "px0337", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0039", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1259", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0883", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0973", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px1242", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3, 4, 5], "rel": "equal"}]}, "before": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0982", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px1693", "after": {"pairs": []}}
+{"id": "px0427", "after": {"pairs": []}}
+{"id": "px1193", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1552", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1593", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2, 3], "rel": "equal"}, {"g": [3], "m": [4, 5], "rel": "equal"}, {"g": [4], "m": [6], "rel": "equal"}, {"g": [5], "m": [8], "rel": "equal"}, {"g": [6], "m": [9, 10], "rel": "equal"}, {"g": [7], "m": [11, 12], "rel": "equal"}, {"g": [8], "m": [13], "rel": "equal"}, {"g": [9], "m": [14], "rel": "equal"}]}}
+{"id": "px0231", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0941", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}}
+{"id": "px1470", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1587", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0155", "after": {"pairs": [{"g": [1, 2], "m": [1], "rel": "equal"}, {"g": [3], "m": [3], "rel": "partial"}]}}
+{"id": "px1674", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0584", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0739", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}, "before": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0540", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}, {"g": [5], "m": [5], "rel": "equal"}, {"g": [6], "m": [6], "rel": "equal"}, {"g": [7], "m": [7], "rel": "equal"}, {"g": [8], "m": [8], "rel": "equal"}, {"g": [9], "m": [9, 10], "rel": "equal"}]}, "before": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1378", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0913", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px1115", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px0210", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}, "before": {"pairs": [{"g": [1], "m": [1, 6], "rel": "equal"}]}}
+{"id": "px0837", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1344", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px1480", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px0104", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "partial"}]}}
+{"id": "px1326", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1294", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}]}}
+{"id": "px0666", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0679", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0260", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [13], "rel": "equal"}, {"g": [3], "m": [5, 6, 7, 8, 9], "rel": "equal"}, {"g": [4], "m": [10], "rel": "equal"}, {"g": [5], "m": [11, 12], "rel": "equal"}, {"g": [6], "m": [14], "rel": "equal"}]}}
+{"id": "px1398", "after": {"pairs": [{"g": [2], "m": [1], "rel": "equal"}, {"g": [3], "m": [2], "rel": "equal"}, {"g": [4], "m": [3], "rel": "equal"}]}}
+{"id": "px0753", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0612", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2, 3], "rel": "equal"}, {"g": [3], "m": [4], "rel": "equal"}]}}
+{"id": "px0692", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1446", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0908", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1395", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1136", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0793", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}, {"g": [5], "m": [5], "rel": "equal"}, {"g": [6], "m": [6, 7], "rel": "equal"}]}}
+{"id": "px1563", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1521", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0871", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0221", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "partial"}, {"g": [3], "m": [3], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "partial"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px0677", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}, "before": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1564", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1510", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3, 4], "rel": "equal"}, {"g": [4], "m": [5], "rel": "equal"}]}}
+{"id": "px1690", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px1526", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}, {"g": [5], "m": [5], "rel": "equal"}]}}
+{"id": "px1785", "after": {"pairs": [{"g": [1, 2], "m": [1], "rel": "equal"}, {"g": [3], "m": [2], "rel": "equal"}]}}
+{"id": "px1244", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1811", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1475", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [4], "rel": "equal"}, {"g": [3], "m": [2], "rel": "equal"}, {"g": [4], "m": [3, 5, 6], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [4], "rel": "equal"}, {"g": [3], "m": [2], "rel": "equal"}, {"g": [4], "m": [3, 5], "rel": "equal"}]}}
+{"id": "px0891", "after": {"pairs": [{"g": [1, 3], "m": [1], "rel": "equal"}, {"g": [4], "m": [2], "rel": "equal"}]}}
+{"id": "px0870", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}, "before": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1094", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "partial"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px1038", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px1396", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3, 4], "rel": "equal"}]}}
+{"id": "px0742", "after": {"pairs": [{"g": [2], "m": [1], "rel": "equal"}, {"g": [3], "m": [2], "rel": "equal"}, {"g": [4], "m": [3], "rel": "equal"}, {"g": [5], "m": [4], "rel": "equal"}]}, "before": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1233", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0880", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}, "before": {"pairs": [{"g": [1, 2], "m": [1], "rel": "equal"}, {"g": [3], "m": [2], "rel": "equal"}, {"g": [4], "m": [3], "rel": "equal"}]}}
+{"id": "px1459", "after": {"pairs": []}}
+{"id": "px1608", "after": {"pairs": []}}
+{"id": "px0604", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}, "before": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1049", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}]}}
+{"id": "px1738", "after": {"pairs": []}}
+{"id": "px0274", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1088", "after": {"pairs": [{"g": [1], "m": [1], "rel": "partial"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}]}}
+{"id": "px0239", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1561", "after": {"pairs": [{"g": [1], "m": [1], "rel": "partial"}, {"g": [2], "m": [2], "rel": "equal"}]}, "before": {"pairs": [{"g": [1, 2], "m": [1], "rel": "equal"}]}}
+{"id": "px1079", "after": {"pairs": [{"g": [1], "m": [1], "rel": "partial"}, {"g": [2], "m": [2], "rel": "equal"}, {"g": [3], "m": [3], "rel": "equal"}, {"g": [4], "m": [4], "rel": "equal"}]}, "before": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1271", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1611", "after": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}]}}
+{"id": "px1397", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1197", "after": {"pairs": [{"g": [1], "m": [1], "rel": "partial"}]}}
+{"id": "px1457", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px1512", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}, "before": {"pairs": [{"g": [1], "m": [1], "rel": "equal"}, {"g": [2], "m": [2, 3], "rel": "equal"}, {"g": [3], "m": [5, 6], "rel": "equal"}, {"g": [4], "m": [7, 9], "rel": "equal"}, {"g": [5], "m": [8], "rel": "equal"}, {"g": [6], "m": [10], "rel": "equal"}]}}
+{"id": "px1683", "after": {"pairs": [{"g": [1], "m": [1, 2, 3], "rel": "equal"}]}}
+{"id": "px1527", "after": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}, {"g": [2], "m": [3], "rel": "equal"}, {"g": [3], "m": [4], "rel": "equal"}, {"g": [4], "m": [5], "rel": "equal"}]}, "before": {"pairs": [{"g": [1], "m": [1, 2], "rel": "equal"}, {"g": [2], "m": [3], "rel": "equal"}, {"g": [3], "m": [4], "rel": "equal"}, {"g": [4], "m": [5], "rel": "equal"}]}}
+{"id": "px1221", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
+{"id": "px0384", "after": {"pairs": [{"g": [2], "m": [1], "rel": "equal"}, {"g": [3], "m": [2], "rel": "equal"}, {"g": [4], "m": [3], "rel": "equal"}, {"g": [5], "m": [4], "rel": "equal"}, {"g": [6], "m": [5], "rel": "equal"}]}}
+{"id": "px1361", "after": {"error": "402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions"}}
