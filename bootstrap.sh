@@ -5,7 +5,7 @@
 # Аргументы пробрасываются в run_all.sh (например: bash bootstrap.sh --only g0).
 set -euo pipefail
 
-REPO_URL="${POLLUX_REPO:-__REPO_URL__}"   # можно переопределить: POLLUX_REPO=... bash bootstrap.sh
+REPO_URL="${POLLUX_REPO:-https://github.com/pashazvrv/automization-pollux.git}"
 DIR=atomization-pollux
 
 if [ "$REPO_URL" = "__REPO_URL__" ]; then
